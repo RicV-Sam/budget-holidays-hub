@@ -1,0 +1,5 @@
+# Force HTTPS while preserving full path and query parameters
+http://budgetholidayshub.com/* https://budgetholidayshub.com/:splat 301!
+
+# Consolidate legacy Spain URL
+/guides/spain-budget-holidays/ /guides/cheap-holidays-spain-from-uk/ 301
