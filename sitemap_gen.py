@@ -23,6 +23,23 @@ pages = [
     ("terms/", "monthly", "0.5"),
 ]
 
+# Pages updated during current rollout; use fresher lastmod.
+recent_lastmod_paths = {
+    "guides/best-travel-booking-websites-uk/",
+    "guides/cheap-all-inclusive-holidays-uk/",
+    "guides/cheap-holidays-algarve-from-uk/",
+    "guides/cheap-holidays-bulgaria-from-uk/",
+    "guides/cheap-holidays-greece-from-uk/",
+    "guides/cheap-holidays-italy-from-uk/",
+    "guides/cheap-holidays-portugal-from-uk/",
+    "guides/cheap-holidays-spain-from-uk/",
+    "guides/cheap-holidays-tenerife-from-uk/",
+    "guides/cheap-holidays-turkey-from-uk/",
+    "guides/cheapest-holiday-destinations-from-uk-2026/",
+    "guides/cheapest-holidays-under-500-uk/",
+    "guides/cheapest-winter-sun-destinations-uk/",
+}
+
 # Get all guides
 guides = []
 for d in os.listdir("guides"):
@@ -55,11 +72,13 @@ for path, freq, prio in pages:
 
 # Focus pages
 for path in focus_pages:
-    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-03-24</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n\n'
+    lastmod = "2026-04-20" if path in recent_lastmod_paths else "2026-03-24"
+    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n\n'
 
 # Other guides
 for path in guides:
-    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-03-17</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
+    lastmod = "2026-04-20" if path in recent_lastmod_paths else "2026-03-17"
+    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
 
 # Money pages
 for path in money_pages:
