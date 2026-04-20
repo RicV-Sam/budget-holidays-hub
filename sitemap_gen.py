@@ -13,6 +13,7 @@ focus_pages = [
 pages = [
     ("", "daily", "1.0"),
     ("guides/", "weekly", "0.9"),
+    ("make-money-for-travel/", "weekly", "0.9"),
     ("how-we-research/", "monthly", "0.6"),
     ("editorial-standards/", "monthly", "0.6"),
     ("affiliate-disclosure/", "monthly", "0.6"),
@@ -32,6 +33,19 @@ for d in os.listdir("guides"):
 
 guides.sort()
 
+money_pages = []
+money_dir = "make-money-for-travel"
+if os.path.isdir(money_dir):
+    for name in os.listdir(money_dir):
+        full = os.path.join(money_dir, name)
+        if not os.path.isfile(full) or not name.endswith(".html"):
+            continue
+        if name == "index.html":
+            continue
+        money_pages.append(f"make-money-for-travel/{name}")
+
+money_pages.sort()
+
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
 sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
@@ -46,6 +60,10 @@ for path in focus_pages:
 # Other guides
 for path in guides:
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-03-17</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
+
+# Money pages
+for path in money_pages:
+    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-04-20</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
 
 sitemap += '</urlset>\n'
 
