@@ -15,13 +15,12 @@ pages = [
     ("guides/", "weekly", "0.9"),
     ("make-money-for-travel/", "weekly", "0.9"),
     ("videos/", "weekly", "0.9"),
+    ("planner/", "monthly", "0.7"),
+    ("calculator/", "monthly", "0.7"),
     ("how-we-research/", "monthly", "0.6"),
     ("editorial-standards/", "monthly", "0.6"),
     ("affiliate-disclosure/", "monthly", "0.6"),
     ("about/", "monthly", "0.5"),
-    ("contact/", "monthly", "0.5"),
-    ("privacy/", "monthly", "0.5"),
-    ("terms/", "monthly", "0.5"),
 ]
 
 # Pages updated during current rollout; use fresher lastmod.

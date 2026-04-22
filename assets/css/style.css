@@ -1157,3 +1157,55 @@ section.card table td:last-child {
     font-size: 0.85rem;
     color: var(--muted);
 }
+
+.travel-outcome-module,
+.monetization-placeholder,
+.next-step-cta {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.travel-outcome-module {
+    background: var(--primary-light);
+    border-left: 5px solid var(--primary);
+}
+
+.travel-outcome-module h2,
+.monetization-placeholder h2,
+.next-step-cta h2 {
+    margin-top: 0;
+}
+
+.monetization-placeholder {
+    min-height: 120px;
+    background: var(--surface-soft);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.monetization-placeholder p {
+    margin-bottom: 0;
+}
+
+.next-step-cta {
+    background: #fffdf0;
+    border-color: #ffecb3;
+}
+
+.cluster-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.cluster-list li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+}
