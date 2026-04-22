@@ -14,6 +14,7 @@ pages = [
     ("", "daily", "1.0"),
     ("guides/", "weekly", "0.9"),
     ("make-money-for-travel/", "weekly", "0.9"),
+    ("videos/", "weekly", "0.9"),
     ("how-we-research/", "monthly", "0.6"),
     ("editorial-standards/", "monthly", "0.6"),
     ("affiliate-disclosure/", "monthly", "0.6"),
@@ -63,6 +64,19 @@ if os.path.isdir(money_dir):
 
 money_pages.sort()
 
+video_pages = []
+video_dir = "videos"
+if os.path.isdir(video_dir):
+    for name in os.listdir(video_dir):
+        full = os.path.join(video_dir, name)
+        if not os.path.isfile(full) or not name.endswith(".html"):
+            continue
+        if name == "index.html":
+            continue
+        video_pages.append(f"videos/{name}")
+
+video_pages.sort()
+
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
 sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
@@ -83,6 +97,10 @@ for path in guides:
 # Money pages
 for path in money_pages:
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-04-20</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
+
+# Video pages
+for path in video_pages:
+    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-04-22</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
 
 sitemap += '</urlset>\n'
 
