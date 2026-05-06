@@ -2,95 +2,104 @@
 
 ## Week Of
 
-- Date: 2026-04-29
+- Date: 2026-05-06
 - Checked by: Codex
 - Source files:
-  - `budgetholidayshub.com-Performance-on-Search-2026-04-29.zip`
-  - `budgetholidayshub.com-Coverage-2026-04-29.zip`
-  - `budgetholidayshub.com-Video-indexing-2026-04-29.zip`
-- Comparison basis: Prior weekly note dated `2026-04-22`.
+  - `budgetholidayshub.com-Performance-on-Search-2026-05-06.zip`
+  - `budgetholidayshub.com-Coverage-2026-05-06.zip`
+- Comparison basis: Prior weekly note dated `2026-04-29`.
 
 ## Performance Snapshot
 
 | Range | Clicks | Impressions | CTR | Avg Position |
 | --- | ---: | ---: | ---: | ---: |
-| Last 7 days | 4 | 660 | 0.61% | 34.43 |
-| Prior weekly note (2026-04-22) | 2 | 781 | 0.26% | 32.57 |
+| Last 7 days | 0 | 267 | 0% | 31.19 |
+| Prior weekly note (2026-04-29) | 4 | 660 | 0.61% | 34.43 |
 
 ## Week-over-Week Change
 
-- Clicks: up from 2 to 4.
-- Impressions: down from 781 to 660.
-- CTR: up from 0.26% to 0.61%.
-- Average position: slipped from 32.57 to 34.43.
-- Read: visibility softened a bit, but the site converted impressions into clicks more efficiently this week.
+- Clicks: down from 4 to 0.
+- Impressions: down from 660 to 267.
+- CTR: down from 0.61% to 0%.
+- Average position: improved from 34.43 to 31.19.
+- Read: rankings improved slightly on average, but visibility and click volume fell sharply. This looks less like a snippet problem alone and more like a reduced page/query footprint.
 
 ## Indexing Snapshot
 
 - Coverage issues:
   - `Page with redirect`: 4 pages.
+  - `Crawled - currently not indexed`: 3 pages.
   - `Alternative page with proper canonical tag`: 2 pages.
-  - `Crawled - currently not indexed`: 1 page.
+  - `Excluded by 'noindex' tag`: 1 page.
   - `Discovered - currently not indexed`: 0 pages.
-- Video indexing:
-  - `Video isn't on a watch page`: 4 videos, validation failed.
 - Notes:
+  - Indexed pages in the Coverage chart fell from `24` to `21` on `2026-04-28`.
+  - Not indexed pages rose from `7` to `10` over the same period.
   - HTTP variants still appear in Performance data for some guide URLs.
-  - Video pages are still not being treated as watch pages by Google.
 
 ## Top Pages by Impressions
 
 | Page | Impressions | Clicks | CTR | Avg Position | Action |
 | --- | ---: | ---: | ---: | ---: | --- |
-| `/guides/cheap-holidays-thailand-from-uk/` | 256 | 1 | 0.39% | 58.59 | Strong demand signal, but ranking is still weak. Improve query matching and heading coverage after CTR-focused fixes. |
-| `/guides/greece-vs-turkey-all-inclusive/` | 164 | 0 | 0% | 5.77 | Best immediate SEO opportunity. Ranking is already page-one level, so snippet and intro changes can unlock clicks fastest. |
-| `/guides/cheap-holidays-mauritius-from-uk/` | 89 | 1 | 1.12% | 39.45 | Add package/deal language and FAQ support. |
-| `/guides/best-travel-booking-websites-uk/` | 89 | 1 | 1.12% | 17.88 | Keep as second priority commercial page; improve title, table, and affiliate intent alignment. |
-| `http://budgetholidayshub.com/guides/cheap-holidays-greece-from-uk/` | 30 | 0 | 0% | 26.6 | Monitor HTTP to HTTPS consolidation and canonical signals. |
-| `/planner/` | 9 | 0 | 0% | 33.22 | Low volume; not a near-term optimization target. |
-| `/make-money-for-travel/` | 10 | 1 | 10% | 3.7 | Early positive signal, but traffic is still too small to prioritize over travel pages. |
+| `/guides/greece-vs-turkey-all-inclusive/` | 80 | 0 | 0% | 6.55 | Still the clearest CTR win. Keep tightening title, meta, and opening summary for comparison intent. |
+| `/guides/cheap-holidays-thailand-from-uk/` | 75 | 0 | 0% | 62.76 | Demand remains, but rank is far too weak for CTR work. Needs stronger query coverage and authority support. |
+| `/guides/best-travel-booking-websites-uk/` | 54 | 0 | 0% | 12.26 | Commercial page is moving closer to page one. Worth improving after Greece vs Turkey. |
+| `/guides/cheap-holidays-mauritius-from-uk/` | 37 | 0 | 0% | 42.03 | Keep building package/deal phrasing and supporting sections. |
+| `http://budgetholidayshub.com/guides/cheap-holidays-greece-from-uk/` | 7 | 0 | 0% | 28.43 | Continue monitoring HTTP to HTTPS consolidation. |
+| `/planner/` | 6 | 0 | 0% | 85 | Not a priority page right now. |
+| `/guides/cheap-family-holidays-spain/` | 3 | 0 | 0% | 36.67 | Too little demand to prioritize this week. |
 
 ## Top Queries
 
 | Query | Impressions | Clicks | CTR | Avg Position | Action |
 | --- | ---: | ---: | ---: | ---: | --- |
-| `cheap holidays to thailand` | 23 | 0 | 0% | 63.04 | Thailand page needs stronger exact-query coverage. |
-| `cheap thailand holidays` | 23 | 0 | 0% | 52.17 | Add variant naturally in title, intro, and subheads. |
-| `thailand holidays cheap` | 23 | 0 | 0% | 50.61 | Support with FAQ and package wording. |
-| `cheap holidays thailand` | 20 | 0 | 0% | 54.25 | Same Thailand cluster opportunity. |
-| `cheap holiday thailand` | 18 | 0 | 0% | 53.61 | Build semantic support in copy. |
-| `cheap mauritius holiday packages` | 18 | 0 | 0% | 41.28 | Mauritius page should explicitly target package intent. |
-| `cheap thailand breaks` | 17 | 0 | 0% | 62.12 | Add "breaks" phrasing where natural. |
-| `cheap holiday to thailand` | 17 | 0 | 0% | 51.82 | Thailand cluster remains the main ranking gap. |
-| `thailand cheap holidays` | 16 | 0 | 0% | 64.88 | Reinforces Thailand demand. |
-| `cheap holidays to mauritius` | 16 | 0 | 0% | 55.62 | Mauritius page still needs stronger match and authority. |
+| `cheap holidays to mauritius` | 8 | 0 | 0% | 61.75 | Mauritius page still needs stronger exact-match support. |
+| `cheap deals to thailand` | 7 | 0 | 0% | 56.29 | Add "deals" language where natural on Thailand page. |
+| `cheap holiday to thailand` | 7 | 0 | 0% | 61.29 | Reinforces Thailand query cluster gap. |
+| `mauritius cheap holidays` | 6 | 0 | 0% | 32.33 | Add variant naturally in headings and intro copy. |
+| `cheap thailand holidays` | 6 | 0 | 0% | 51.83 | Thailand page still needs stronger direct query coverage. |
+| `cheap holidays to thailand` | 6 | 0 | 0% | 74.5 | Demand exists, but the page is not yet competitive. |
+| `cheapest thailand holidays` | 6 | 0 | 0% | 77.33 | Useful supporting variant for Thailand content. |
+| `holiday budget planner` | 6 | 0 | 0% | 85 | Low ranking, low leverage. Not a weekly focus. |
+| `cheap mauritius holidays` | 5 | 0 | 0% | 33.8 | Mauritius remains a secondary optimization target. |
+| `cheap greek holidays from uk` | 5 | 0 | 0% | 35.4 | Signal exists, but the HTTP Greece page needs consolidation first. |
 
 ## Low CTR Opportunities
 
 | Page | Why it matters | Planned Change |
 | --- | --- | --- |
-| `/guides/greece-vs-turkey-all-inclusive/` | 164 impressions, 0 clicks, average position 5.77. This is the clearest "ranking without clicks" opportunity on the site. | Rewrite title and meta for comparison intent, add a sharper winner summary near the top, and tighten the intro around value-for-money decisions. |
-| `/guides/best-travel-booking-websites-uk/` | Commercial intent with decent impressions and mid-page ranking. | Improve SERP title/meta, add a stronger 2026 comparison hook, and make affiliate comparison intent clearer. |
-| `/guides/cheap-holidays-thailand-from-uk/` | Highest-impression page, but ranking is too weak for CTR work alone to matter. | Improve topical depth, heading/query coverage, and internal links rather than just rewriting metadata. |
+| `/guides/greece-vs-turkey-all-inclusive/` | `80` impressions, `0` clicks, average position `6.55`. It still ranks close enough to earn clicks with better SERP and above-the-fold messaging. | Rewrite title and meta for comparison intent, sharpen the intro around value and decision-making, and add a stronger "winner for budget travellers" summary near the top. |
+| `/guides/best-travel-booking-websites-uk/` | Commercial intent, `54` impressions, and average position improved to `12.26`. This page is approaching first-page contention. | Improve title/meta with a stronger 2026 comparison hook, tighten affiliate intent alignment, and make the comparison table more obviously useful from search. |
+| `/guides/cheap-holidays-mauritius-from-uk/` | Still surfacing for multiple Mauritius variants, but matching is weak and no clicks landed. | Add package/deal wording, expand FAQ coverage, and improve internal links from related destination content. |
 
 ## Indexing / Crawl Issues
 
 | URL / Area | Issue | Next Step |
 | --- | --- | --- |
-| Guide URLs appearing as `http://` | Search Console still reports HTTP variants for Greece, Prague, Morocco, Amsterdam, and the old Spain URL. | Verify redirects/canonicals live and keep monitoring until impressions consolidate to HTTPS. |
-| Redirected pages | 4 pages are in `Page with redirect`. | Accept if intentional; otherwise check sitemap/internal links to avoid pushing Google toward redirected URLs. |
-| Canonical duplicates | 2 pages are flagged as alternative canonical pages. | Review for duplicate templates or near-identical variants if these were not intentional. |
-| Video pages | 4 videos fail with `Video isn't on a watch page`. | Strengthen video-page structure so each video page clearly centers one playable video with supporting text around it. |
+| Coverage trend | Indexed pages dropped from `24` to `21` on `2026-04-28`, while not indexed pages rose from `7` to `10`. | Check which URLs fell out of the indexed set and verify sitemap, canonicals, internal links, and recent page-level changes. |
+| Guide URLs appearing as `http://` | Search Console still reports HTTP variants for Greece, Morocco, and Amsterdam guide URLs. | Verify redirects and canonical signals remain consistent and that internal links always point to HTTPS versions. |
+| Redirected pages | 4 pages are in `Page with redirect`. | Accept if intentional; otherwise remove redirected URLs from sitemaps and internal navigation. |
+| Crawled but not indexed pages | 3 pages are now in `Crawled - currently not indexed`, up from 1 last week. | Review content quality, duplication, and internal linking on those pages before adding more new content. |
+| Noindex page | 1 page is excluded by `noindex`. | Confirm whether that directive is intentional. |
+
+## Implementation Notes
+
+- Local SEO audit passed after the 2026-05-06 changes: `139` public pages, `139` sitemap URLs, `3` intentional noindex pages.
+- The `noindex` signals found locally are intentional: the legacy `/guides/spain-budget-holidays/` redirect page and two HTML templates.
+- The likely `Alternative page with proper canonical tag` signal is the legacy Spain URL canonicalising to `/guides/cheap-holidays-spain-from-uk/`.
+- No internal links or sitemap URLs use `http://budgetholidayshub.com`; the remaining HTTP Performance rows should be monitored as Google consolidates old variants through the existing HTTPS redirect.
+- CTR work completed for `/guides/greece-vs-turkey-all-inclusive/`: title/meta, social metadata, structured data headline/description, top verdict copy and sitemap `lastmod` were updated on `2026-05-06`.
 
 ## Content Actions for Next Week
 
-- Improve first: `/guides/greece-vs-turkey-all-inclusive/`
+- Monitor first: `/guides/greece-vs-turkey-all-inclusive/` CTR after the 2026-05-06 update.
 - Improve second: `/guides/best-travel-booking-websites-uk/`
-- Improve third: `/guides/cheap-holidays-thailand-from-uk/`
+- Improve third: `/guides/cheap-holidays-mauritius-from-uk/`
+- Re-check immediately: the indexed-page count in the next Coverage export.
 - Monitor: HTTP/HTTPS duplication signals in guide exports.
-- Review: video page structure before expecting video indexing gains.
 
 ## Recommendation
 
 - Next SEO page to improve: `/guides/greece-vs-turkey-all-inclusive/`
-- Reason: it already ranks strongly at average position `5.77`, picked up `164` impressions in 7 days, and still got `0` clicks. That makes it the fastest likely win from on-page CTR work rather than a larger authority/content rebuild.
+- Reason: it still has the best combination of demand and rank, with average position `6.55` and `80` impressions but `0` clicks. That keeps it as the fastest likely content win.
+- Important caveat: the sharper site-wide issue this week is indexing loss. If the Coverage drop reflects important guide pages falling out of the index, fixing that may matter more than any single-page rewrite.
