@@ -1,0 +1,1165 @@
+{
+  "site": {
+    "baseUrl": "https://budgetholidayshub.com",
+    "sectionName": "Taste the World",
+    "sectionPath": "/taste-the-world/",
+    "sectionSeoTitle": "Taste the World: Travel-Inspired Recipes | BudgetHolidayHub",
+    "sectionMetaDescription": "Explore simple travel-inspired Thai and Indian recipes, then discover the budget holiday destinations and travel guides behind the flavours.",
+    "sectionIntro": "Explore simple travel-inspired recipes from popular holiday destinations, then discover the places that made them famous.",
+    "datePublished": "2026-05-13",
+    "dateModified": "2026-05-13"
+  },
+  "travelLinks": {
+    "thailand": [
+      {
+        "label": "Thailand holidays from the UK",
+        "href": "/guides/cheap-holidays-thailand-from-uk/",
+        "destination": "Thailand"
+      },
+      {
+        "label": "Browse Asia holiday guides",
+        "href": "/guides/#all-guides",
+        "destination": "Asia"
+      },
+      {
+        "label": "Vietnam budget travel guide",
+        "href": "/guides/cheap-holidays-vietnam-from-uk/",
+        "destination": "Vietnam"
+      },
+      {
+        "label": "Cambodia budget travel guide",
+        "href": "/guides/cheap-holidays-cambodia-from-uk/",
+        "destination": "Cambodia"
+      }
+    ],
+    "india": [
+      {
+        "label": "Browse Asia holiday guides",
+        "href": "/guides/#all-guides",
+        "destination": "Asia"
+      },
+      {
+        "label": "Sri Lanka budget travel guide",
+        "href": "/guides/cheap-holidays-sri-lanka-from-uk/",
+        "destination": "Sri Lanka"
+      },
+      {
+        "label": "Malaysia budget travel guide",
+        "href": "/guides/cheap-holidays-malaysia-from-uk/",
+        "destination": "Malaysia"
+      },
+      {
+        "label": "Cheapest holiday destinations from the UK",
+        "href": "/guides/cheapest-holiday-destinations-from-uk-2026/",
+        "destination": "Worldwide"
+      }
+    ],
+    "global": [
+      {
+        "label": "Budget travel guides",
+        "href": "/guides/",
+        "destination": "Travel guides"
+      },
+      {
+        "label": "Cheapest holiday destinations from the UK",
+        "href": "/guides/cheapest-holiday-destinations-from-uk-2026/",
+        "destination": "Worldwide"
+      },
+      {
+        "label": "Thailand holidays from the UK",
+        "href": "/guides/cheap-holidays-thailand-from-uk/",
+        "destination": "Thailand"
+      }
+    ]
+  },
+  "pendingTravelLinks": [
+    {
+      "label": "India holidays",
+      "desiredHref": "/guides/cheap-holidays-india-from-uk/",
+      "note": "Add to rendered India recipe pages once a real India guide exists."
+    },
+    {
+      "label": "Goa travel guide",
+      "desiredHref": "/guides/cheap-holidays-goa-from-uk/",
+      "note": "Add to Goan fish curry and Indian hub when a real Goa guide exists."
+    },
+    {
+      "label": "Bangkok budget travel",
+      "desiredHref": "/guides/cheap-holidays-bangkok-from-uk/",
+      "note": "Add to Thai street-food recipes when a real Bangkok guide exists."
+    },
+    {
+      "label": "Phuket holidays",
+      "desiredHref": "/guides/cheap-holidays-phuket-from-uk/",
+      "note": "Add to Thai curry and beach-food recipes when a real Phuket guide exists."
+    }
+  ],
+  "cuisines": [
+    {
+      "slug": "thai-recipes",
+      "name": "Thai Recipes",
+      "country": "Thailand",
+      "seoTitle": "Thai Recipes Inspired by Thailand Holidays | BudgetHolidayHub",
+      "metaDescription": "Explore easy Thai recipes inspired by Thailand holidays, including green curry, pad Thai, red curry, chicken satay and simple dishes you can cook at home.",
+      "h1": "Thai Recipes Inspired by Thailand Holidays",
+      "intro": "Bring the flavours of Thailand into your kitchen with simple Thai recipes inspired by street food, beach holidays and classic dishes from Bangkok, Phuket and beyond.",
+      "cardDescription": "Fragrant curries, noodles and street-food favourites inspired by Thailand holidays.",
+      "image": "/assets/images/taste-the-world-thai.svg",
+      "imageAlt": "Taste the World Thai recipes placeholder",
+      "whyTitle": "Why Thai Food Works So Well at Home",
+      "whyBody": [
+        "Thai cooking is built around quick heat, fresh herbs, coconut milk, noodles and balanced sauces, which makes it practical for weeknight cooking.",
+        "You can keep the flavour clear without needing specialist equipment. A wok or large frying pan, supermarket curry paste and fresh lime will take most recipes a long way.",
+        "The recipes in this hub keep the travel inspiration front and centre while using ingredients that are easier to find in UK and European supermarkets."
+      ],
+      "travelTitle": "Planning a Thailand Trip?",
+      "travelIntro": "If these dishes make you want to try the real thing, start with the budget Thailand guide and nearby Asia travel ideas.",
+      "travelLinkKeys": [
+        "thailand"
+      ],
+      "faqs": [
+        {
+          "question": "Are these Thai recipes beginner friendly?",
+          "answer": "Yes. The recipes use simple methods, short ingredient lists and supermarket-friendly swaps where specialist Thai ingredients are harder to find."
+        },
+        {
+          "question": "What Thai ingredients are worth buying first?",
+          "answer": "Curry paste, coconut milk, fish sauce or soy sauce, rice noodles, limes and fresh herbs give you the most flexible starting point."
+        },
+        {
+          "question": "Which Thai recipe is cheapest to cook first?",
+          "answer": "Thai red curry and pad Thai are usually strong budget choices because they stretch vegetables, noodles, rice and one main protein across several portions."
+        }
+      ]
+    },
+    {
+      "slug": "indian-recipes",
+      "name": "Indian Recipes",
+      "country": "India",
+      "seoTitle": "Indian Recipes Inspired by India Holidays | BudgetHolidayHub",
+      "metaDescription": "Cook easy Indian recipes at home, from butter chicken and tikka masala to chana masala, dal and Goan fish curry, with travel-inspired food ideas.",
+      "h1": "Indian Recipes Inspired by India Holidays",
+      "intro": "Explore Indian recipes inspired by colourful markets, coastal holidays, family kitchens and classic dishes from across India.",
+      "cardDescription": "Comforting curries, vegetarian classics and regional dishes inspired by India's food culture.",
+      "image": "/assets/images/taste-the-world-indian.svg",
+      "imageAlt": "Taste the World Indian recipes placeholder",
+      "whyTitle": "Indian Food, Travel and Budget Cooking",
+      "whyBody": [
+        "Indian cooking is ideal for budget kitchens because lentils, chickpeas, rice, spices and tinned tomatoes can create generous meals without a high weekly spend.",
+        "Many dishes also improve after resting, so they work well for batch cooking, packed lunches and freezer portions.",
+        "This hub keeps the travel link visible while focusing on practical recipes you can cook with common UK and European supermarket ingredients."
+      ],
+      "travelTitle": "Planning an India Trip?",
+      "travelIntro": "Dedicated India and Goa guides are not live yet, so this launch links only to confirmed BudgetHolidayHub Asia and long-haul planning pages.",
+      "travelLinkKeys": [
+        "india"
+      ],
+      "faqs": [
+        {
+          "question": "Are these Indian recipes very spicy?",
+          "answer": "They are written to be adjustable. Start with mild chilli powder or less fresh chilli, then increase heat once the sauce is balanced."
+        },
+        {
+          "question": "Which Indian recipe is best for a low budget?",
+          "answer": "Dal tadka and chana masala are usually the cheapest because they rely on lentils or chickpeas, spices and pantry ingredients."
+        },
+        {
+          "question": "Can I cook these without specialist Indian ingredients?",
+          "answer": "Yes. Each recipe includes UK and European ingredient swaps such as butter for ghee, mild chilli powder with paprika for Kashmiri chilli, and dried fenugreek for fresh methi."
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "slug": "thai-green-curry",
+      "title": "Easy Thai Green Curry",
+      "h1": "Easy Thai Green Curry Recipe",
+      "seoTitle": "Easy Thai Green Curry Recipe Using UK Supermarket Ingredients | BudgetHolidayHub",
+      "metaDescription": "Make an easy Thai green curry at home with supermarket-friendly ingredients, simple swaps, budget tips and links to Thailand holiday ideas.",
+      "cuisine": "Thai",
+      "cuisineSlug": "thai-recipes",
+      "country": "Thailand",
+      "inspiredBy": "Thailand holidays",
+      "category": "Curry",
+      "prepTime": "15 minutes",
+      "cookTime": "25 minutes",
+      "totalTime": "40 minutes",
+      "prepTimeIso": "PT15M",
+      "cookTimeIso": "PT25M",
+      "totalTimeIso": "PT40M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 8-12",
+      "heroImage": "/assets/images/taste-the-world-thai.svg",
+      "imageAlt": "Easy Thai green curry travel-inspired recipe placeholder",
+      "intro": "This easy Thai green curry is inspired by the creamy, fragrant curries served across Thailand. It is designed for home cooks using ingredients that are easier to find in UK and European supermarkets while keeping the dish fresh, spicy and full of flavour.",
+      "ingredients": [
+        "1 tbsp neutral oil",
+        "500g chicken thighs, chicken breast or firm tofu",
+        "2-3 tbsp Thai green curry paste",
+        "400ml coconut milk",
+        "1 red pepper, sliced",
+        "150g green beans or mangetout",
+        "1 tsp brown sugar",
+        "1 tbsp fish sauce or soy sauce",
+        "Juice of 1 lime",
+        "Fresh basil and cooked jasmine rice, to serve"
+      ],
+      "method": [
+        "Warm the oil in a large pan over medium heat, then fry the curry paste for 1 minute until fragrant.",
+        "Add the chicken or tofu and stir until coated in the paste.",
+        "Pour in the coconut milk, then add the pepper, green beans and brown sugar.",
+        "Simmer for 18-22 minutes until the chicken is cooked through or the tofu is hot and the vegetables are tender.",
+        "Season with fish sauce or soy sauce and lime juice, then loosen with a splash of water if needed.",
+        "Serve with jasmine rice and fresh basil."
+      ],
+      "substitutions": [
+        {
+          "original": "Thai basil",
+          "substitute": "Basil with a little mint"
+        },
+        {
+          "original": "Galangal",
+          "substitute": "Fresh ginger with lime zest"
+        },
+        {
+          "original": "Kaffir lime leaves",
+          "substitute": "Extra lime zest"
+        },
+        {
+          "original": "Palm sugar",
+          "substitute": "Brown sugar or honey"
+        },
+        {
+          "original": "Fish sauce",
+          "substitute": "Soy sauce with lime juice for a vegetarian alternative"
+        }
+      ],
+      "budgetTips": [
+        "Use chicken thighs instead of breast for a cheaper, more forgiving curry.",
+        "Own-brand coconut milk works well in this recipe.",
+        "Freeze leftover curry paste in spoon-sized portions.",
+        "Serve with rice to stretch the curry across four portions."
+      ],
+      "travelConnection": "Thai green curry is a classic dish you will find across Thailand, from casual Bangkok restaurants to beachside spots in Phuket and Krabi. If this recipe has you thinking about the real thing, explore BudgetHolidayHub's Thailand and wider Asia travel ideas.",
+      "travelLinkKeys": [
+        "thailand"
+      ],
+      "relatedRecipes": [
+        "thai-red-curry",
+        "pad-thai",
+        "thai-basil-chicken",
+        "chicken-satay"
+      ],
+      "faqs": [
+        {
+          "question": "Can I make Thai green curry with supermarket curry paste?",
+          "answer": "Yes. A good supermarket Thai green curry paste keeps the method quick and affordable. Add lime juice and fresh basil at the end to brighten the flavour."
+        },
+        {
+          "question": "Can I make this Thai green curry vegetarian?",
+          "answer": "Yes. Use firm tofu or mixed vegetables and swap fish sauce for soy sauce with a squeeze of lime."
+        },
+        {
+          "question": "Can I freeze Thai green curry?",
+          "answer": "Yes. Freeze the curry without rice for up to 2 months, then reheat gently and add fresh lime before serving."
+        }
+      ],
+      "keywords": [
+        "thai green curry recipe",
+        "easy Thai curry",
+        "Thailand holiday food",
+        "UK supermarket ingredients"
+      ]
+    },
+    {
+      "slug": "pad-thai",
+      "title": "Pad Thai",
+      "h1": "Pad Thai Recipe Inspired by Thailand Street Food",
+      "seoTitle": "Pad Thai Recipe Inspired by Thailand Street Food | BudgetHolidayHub",
+      "metaDescription": "Cook a simple pad Thai recipe inspired by Thailand street food, with easy ingredients, budget cooking tips and travel ideas for your next Thai holiday.",
+      "cuisine": "Thai",
+      "cuisineSlug": "thai-recipes",
+      "country": "Thailand",
+      "inspiredBy": "Bangkok street food",
+      "category": "Noodles",
+      "prepTime": "15 minutes",
+      "cookTime": "15 minutes",
+      "totalTime": "30 minutes",
+      "prepTimeIso": "PT15M",
+      "cookTimeIso": "PT15M",
+      "totalTimeIso": "PT30M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 7-11",
+      "heroImage": "/assets/images/taste-the-world-thai.svg",
+      "imageAlt": "Pad Thai travel-inspired recipe placeholder",
+      "intro": "This pad Thai is inspired by the quick noodle dishes served at Thai night markets. It keeps the sweet, sour and savoury balance but uses ingredients that are realistic for everyday UK and European kitchens.",
+      "ingredients": [
+        "220g flat rice noodles",
+        "2 tbsp neutral oil",
+        "2 eggs, lightly beaten",
+        "300g chicken, prawns or firm tofu",
+        "2 garlic cloves, finely chopped",
+        "150g beansprouts",
+        "3 spring onions, sliced",
+        "3 tbsp tamarind paste or lime juice",
+        "2 tbsp fish sauce or soy sauce",
+        "1 tbsp brown sugar",
+        "Roasted peanuts, lime wedges and chilli flakes, to serve"
+      ],
+      "method": [
+        "Soak or cook the noodles according to the packet instructions, then drain well.",
+        "Mix tamarind or lime juice with fish sauce or soy sauce and brown sugar.",
+        "Heat oil in a wok or large frying pan, then scramble the eggs and move them to one side.",
+        "Add the chicken, prawns or tofu with the garlic and cook until done.",
+        "Add noodles and sauce, tossing quickly so everything is coated.",
+        "Fold through beansprouts and spring onions, then serve with peanuts, lime and chilli."
+      ],
+      "substitutions": [
+        {
+          "original": "Tamarind paste",
+          "substitute": "Lime juice with a small pinch of brown sugar"
+        },
+        {
+          "original": "Dried shrimp",
+          "substitute": "Leave out or add extra peanuts"
+        },
+        {
+          "original": "Garlic chives",
+          "substitute": "Spring onions"
+        },
+        {
+          "original": "Palm sugar",
+          "substitute": "Brown sugar"
+        },
+        {
+          "original": "Fish sauce",
+          "substitute": "Soy sauce for a vegetarian version"
+        }
+      ],
+      "budgetTips": [
+        "Use tofu or eggs as the main protein to keep the cost down.",
+        "Buy rice noodles in larger bags if you cook stir-fries often.",
+        "Beansprouts bulk out the dish cheaply and cook in seconds.",
+        "Use leftover chicken from another meal to reduce waste."
+      ],
+      "travelConnection": "Pad Thai is closely linked with Thailand's street-food culture, especially quick market meals in Bangkok and busy night markets around the country. If this recipe makes you hungry for the real thing, start with Thailand and Asia budget travel ideas.",
+      "travelLinkKeys": [
+        "thailand"
+      ],
+      "relatedRecipes": [
+        "thai-green-curry",
+        "chicken-satay",
+        "thai-basil-chicken",
+        "thai-red-curry"
+      ],
+      "faqs": [
+        {
+          "question": "What noodles should I use for pad Thai?",
+          "answer": "Use flat rice noodles. Medium-width noodles are easiest to toss without breaking."
+        },
+        {
+          "question": "Can I make pad Thai without tamarind?",
+          "answer": "Yes. Lime juice with a small pinch of brown sugar gives a simple sour-sweet alternative."
+        },
+        {
+          "question": "How do I stop pad Thai going sticky?",
+          "answer": "Drain the noodles well, keep the pan hot and toss quickly after adding the sauce."
+        }
+      ],
+      "keywords": [
+        "pad Thai recipe",
+        "Thailand street food",
+        "easy noodle recipe",
+        "Thai holiday food"
+      ]
+    },
+    {
+      "slug": "thai-red-curry",
+      "title": "Easy Thai Red Curry",
+      "h1": "Easy Thai Red Curry Recipe",
+      "seoTitle": "Easy Thai Red Curry Recipe for a Taste of Thailand at Home | BudgetHolidayHub",
+      "metaDescription": "Make a quick Thai red curry with coconut milk, simple ingredients and a travel-inspired link to Thailand's beach and city food culture.",
+      "cuisine": "Thai",
+      "cuisineSlug": "thai-recipes",
+      "country": "Thailand",
+      "inspiredBy": "Thailand beach holidays",
+      "category": "Curry",
+      "prepTime": "10 minutes",
+      "cookTime": "25 minutes",
+      "totalTime": "35 minutes",
+      "prepTimeIso": "PT10M",
+      "cookTimeIso": "PT25M",
+      "totalTimeIso": "PT35M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 8-12",
+      "heroImage": "/assets/images/taste-the-world-thai.svg",
+      "imageAlt": "Thai red curry travel-inspired recipe placeholder",
+      "intro": "This Thai red curry is a simple coconut curry for home cooks who want big flavour without a long shopping list. It is inspired by the relaxed curry dishes you might order on a Thailand beach holiday or in a casual city restaurant.",
+      "ingredients": [
+        "1 tbsp neutral oil",
+        "2-3 tbsp Thai red curry paste",
+        "500g chicken thighs, prawns, tofu or mixed vegetables",
+        "400ml coconut milk",
+        "1 courgette, sliced",
+        "1 red pepper, sliced",
+        "1 tbsp fish sauce or soy sauce",
+        "1 tsp brown sugar",
+        "Juice of 1 lime",
+        "Cooked rice and coriander, to serve"
+      ],
+      "method": [
+        "Heat the oil in a wide pan and fry the red curry paste for 1 minute.",
+        "Add the chicken, prawns, tofu or vegetables and stir to coat.",
+        "Pour in coconut milk and bring to a gentle simmer.",
+        "Add courgette and pepper, then cook until the protein is done and the vegetables are tender.",
+        "Season with fish sauce or soy sauce, brown sugar and lime juice.",
+        "Serve with rice and coriander."
+      ],
+      "substitutions": [
+        {
+          "original": "Thai red curry paste",
+          "substitute": "A supermarket red curry paste with extra chilli flakes if you want more heat"
+        },
+        {
+          "original": "Kaffir lime leaves",
+          "substitute": "Lime zest"
+        },
+        {
+          "original": "Thai aubergine",
+          "substitute": "Courgette or ordinary aubergine"
+        },
+        {
+          "original": "Palm sugar",
+          "substitute": "Brown sugar"
+        },
+        {
+          "original": "Fish sauce",
+          "substitute": "Soy sauce with lime juice"
+        }
+      ],
+      "budgetTips": [
+        "Use frozen prawns or tofu if fresh meat is expensive.",
+        "Add extra vegetables to make the curry serve more people.",
+        "Serve with own-brand rice for a filling low-cost meal.",
+        "Make a double batch and freeze half before adding fresh herbs."
+      ],
+      "travelConnection": "Thai red curry fits the easy holiday-food mood you find in Thailand's beach towns and city restaurants. Cook it at home, then use the linked Thailand and Asia guides to compare where your budget could go next.",
+      "travelLinkKeys": [
+        "thailand"
+      ],
+      "relatedRecipes": [
+        "thai-green-curry",
+        "thai-basil-chicken",
+        "pad-thai"
+      ],
+      "faqs": [
+        {
+          "question": "Is Thai red curry hotter than Thai green curry?",
+          "answer": "It depends on the paste, but red curry is often rounded and warming while green curry can taste fresher and sharper."
+        },
+        {
+          "question": "Can I use vegetables instead of chicken?",
+          "answer": "Yes. Aubergine, courgette, peppers, green beans and tofu all work well."
+        },
+        {
+          "question": "Can I make Thai red curry ahead?",
+          "answer": "Yes. It reheats well. Add fresh lime and herbs after reheating for the best flavour."
+        }
+      ],
+      "keywords": [
+        "Thai red curry recipe",
+        "easy coconut curry",
+        "Thailand beach food",
+        "budget curry"
+      ]
+    },
+    {
+      "slug": "thai-basil-chicken",
+      "title": "Thai Basil Chicken",
+      "h1": "Thai Basil Chicken Recipe",
+      "seoTitle": "Thai Basil Chicken Recipe Inspired by Bangkok Street Food | BudgetHolidayHub",
+      "metaDescription": "Cook Thai basil chicken at home with a quick stir-fry method inspired by Bangkok street food and easy weeknight dinners.",
+      "cuisine": "Thai",
+      "cuisineSlug": "thai-recipes",
+      "country": "Thailand",
+      "inspiredBy": "Bangkok street food",
+      "category": "Stir-fry",
+      "prepTime": "10 minutes",
+      "cookTime": "12 minutes",
+      "totalTime": "22 minutes",
+      "prepTimeIso": "PT10M",
+      "cookTimeIso": "PT12M",
+      "totalTimeIso": "PT22M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 7-10",
+      "heroImage": "/assets/images/taste-the-world-thai.svg",
+      "imageAlt": "Thai basil chicken travel-inspired recipe placeholder",
+      "intro": "Thai basil chicken is a fast stir-fry inspired by the everyday street-food lunches served across Bangkok. This version keeps the method quick and practical, with supermarket swaps for fresh herbs and sauces.",
+      "ingredients": [
+        "1 tbsp neutral oil",
+        "500g chicken mince or finely chopped chicken thighs",
+        "3 garlic cloves, finely chopped",
+        "1 red chilli, sliced, or chilli flakes",
+        "1 tbsp soy sauce",
+        "1 tbsp fish sauce or extra soy sauce",
+        "1 tsp brown sugar",
+        "A large handful of basil",
+        "Cooked rice and fried eggs, to serve"
+      ],
+      "method": [
+        "Heat the oil in a wok or large frying pan until hot.",
+        "Add the chicken and stir-fry until browned and cooked through.",
+        "Add garlic and chilli, then cook for 30 seconds.",
+        "Stir in soy sauce, fish sauce or extra soy sauce, and brown sugar.",
+        "Turn off the heat and fold through the basil so it wilts without losing freshness.",
+        "Serve with rice and a fried egg if you like."
+      ],
+      "substitutions": [
+        {
+          "original": "Thai holy basil",
+          "substitute": "Basil with a little mint"
+        },
+        {
+          "original": "Fresh Thai chillies",
+          "substitute": "Red chilli or chilli flakes"
+        },
+        {
+          "original": "Oyster sauce",
+          "substitute": "Soy sauce with a tiny pinch of sugar"
+        },
+        {
+          "original": "Fish sauce",
+          "substitute": "Soy sauce with lime juice"
+        }
+      ],
+      "budgetTips": [
+        "Chicken mince is usually cheaper than diced breast and cooks quickly.",
+        "Serve with rice and an egg to make a small amount of meat go further.",
+        "Use basil stems finely chopped in the stir-fry to reduce waste.",
+        "Frozen chopped garlic can save time and money if you cook stir-fries often."
+      ],
+      "travelConnection": "This dish is inspired by quick Bangkok street-food lunches where rice, stir-fried meat, herbs and chilli come together fast. Use it as a weeknight taste of Thailand, then explore confirmed Thailand and Asia travel guides.",
+      "travelLinkKeys": [
+        "thailand"
+      ],
+      "relatedRecipes": [
+        "pad-thai",
+        "thai-green-curry",
+        "chicken-satay"
+      ],
+      "faqs": [
+        {
+          "question": "Can I make Thai basil chicken without Thai basil?",
+          "answer": "Yes. Ordinary basil with a small amount of mint is a useful UK supermarket swap."
+        },
+        {
+          "question": "Can I make this less spicy?",
+          "answer": "Use half a chilli or skip it completely, then add chilli flakes at the table."
+        },
+        {
+          "question": "What should I serve with Thai basil chicken?",
+          "answer": "Plain jasmine rice and a fried egg make it filling and close to a simple street-food style meal."
+        }
+      ],
+      "keywords": [
+        "Thai basil chicken recipe",
+        "Bangkok street food",
+        "quick Thai stir fry",
+        "easy Thai dinner"
+      ]
+    },
+    {
+      "slug": "chicken-satay",
+      "title": "Chicken Satay",
+      "h1": "Chicken Satay Recipe Inspired by Thai Holiday Food",
+      "seoTitle": "Chicken Satay Recipe Inspired by Thai Holiday Food | BudgetHolidayHub",
+      "metaDescription": "Make easy chicken satay skewers with a simple peanut-style sauce, inspired by Thai markets, beach food and holiday flavours.",
+      "cuisine": "Thai",
+      "cuisineSlug": "thai-recipes",
+      "country": "Thailand",
+      "inspiredBy": "Thai markets and beach food",
+      "category": "Skewers",
+      "prepTime": "20 minutes",
+      "cookTime": "15 minutes",
+      "totalTime": "35 minutes",
+      "prepTimeIso": "PT20M",
+      "cookTimeIso": "PT15M",
+      "totalTimeIso": "PT35M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 8-12",
+      "heroImage": "/assets/images/taste-the-world-thai.svg",
+      "imageAlt": "Chicken satay travel-inspired recipe placeholder",
+      "intro": "Chicken satay is inspired by the skewers you might find at Thai markets, beach stalls and casual holiday restaurants. This version uses a simple marinade and peanut-style sauce for an easy dinner or sharing plate.",
+      "ingredients": [
+        "600g chicken thighs, sliced into strips",
+        "1 tbsp curry powder",
+        "2 tbsp soy sauce",
+        "1 tbsp lime juice",
+        "1 tsp brown sugar",
+        "1 tbsp neutral oil",
+        "3 tbsp peanut butter",
+        "120ml coconut milk or water",
+        "1 tsp sweet chilli sauce",
+        "Rice, cucumber and lime wedges, to serve"
+      ],
+      "method": [
+        "Mix curry powder, soy sauce, lime juice, brown sugar and oil, then coat the chicken.",
+        "Thread the chicken onto skewers or leave as strips if you do not have skewers.",
+        "Cook under a hot grill or in a frying pan for 12-15 minutes, turning until cooked through.",
+        "Warm peanut butter with coconut milk or water and sweet chilli sauce to make a loose dipping sauce.",
+        "Taste the sauce and add lime juice if it needs freshness.",
+        "Serve the chicken with rice, cucumber and lime wedges."
+      ],
+      "substitutions": [
+        {
+          "original": "Fresh lemongrass",
+          "substitute": "Lime zest with a little ginger"
+        },
+        {
+          "original": "Palm sugar",
+          "substitute": "Brown sugar or honey"
+        },
+        {
+          "original": "Coconut milk",
+          "substitute": "Water with a splash of milk for the sauce"
+        },
+        {
+          "original": "Thai chilli sauce",
+          "substitute": "Any mild sweet chilli sauce"
+        }
+      ],
+      "budgetTips": [
+        "Chicken thighs stay juicy and are usually cheaper than breast.",
+        "Skip wooden skewers and cook the strips in a pan if you want less setup.",
+        "Use peanut butter rather than specialist satay sauce.",
+        "Serve with rice and cucumber to turn skewers into a full meal."
+      ],
+      "travelConnection": "Satay-style skewers fit the casual food mood of Thai markets, beach towns and late holiday dinners. If these flavours have you thinking of Thailand, use the confirmed budget travel links below to plan the next step.",
+      "travelLinkKeys": [
+        "thailand"
+      ],
+      "relatedRecipes": [
+        "pad-thai",
+        "thai-green-curry",
+        "thai-red-curry"
+      ],
+      "faqs": [
+        {
+          "question": "Can I cook chicken satay without skewers?",
+          "answer": "Yes. Cook the marinated strips in a frying pan or under the grill, then serve with the sauce."
+        },
+        {
+          "question": "Can I make the satay sauce without coconut milk?",
+          "answer": "Yes. Loosen peanut butter with warm water and add lime juice, soy sauce and a little sweet chilli sauce."
+        },
+        {
+          "question": "Can I prepare chicken satay ahead?",
+          "answer": "Yes. Marinate the chicken for a few hours in the fridge, then cook just before serving."
+        }
+      ],
+      "keywords": [
+        "chicken satay recipe",
+        "Thai holiday food",
+        "easy chicken skewers",
+        "peanut sauce"
+      ]
+    },
+    {
+      "slug": "butter-chicken",
+      "title": "Butter Chicken",
+      "h1": "Butter Chicken Recipe Inspired by Indian Holidays",
+      "seoTitle": "Butter Chicken Recipe Inspired by Indian Holidays | BudgetHolidayHub",
+      "metaDescription": "Cook a creamy butter chicken recipe inspired by Indian food and travel, with simple ingredients, budget tips and related India holiday ideas.",
+      "cuisine": "Indian",
+      "cuisineSlug": "indian-recipes",
+      "country": "India",
+      "inspiredBy": "North India and Indian restaurant culture",
+      "category": "Curry",
+      "prepTime": "15 minutes",
+      "cookTime": "30 minutes",
+      "totalTime": "45 minutes",
+      "prepTimeIso": "PT15M",
+      "cookTimeIso": "PT30M",
+      "totalTimeIso": "PT45M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 9-13",
+      "heroImage": "/assets/images/taste-the-world-indian.svg",
+      "imageAlt": "Butter chicken travel-inspired recipe placeholder",
+      "intro": "This butter chicken is a mild, creamy curry inspired by North Indian cooking and Indian restaurant favourites. It keeps the sauce smooth and family friendly while using simple supermarket ingredients.",
+      "ingredients": [
+        "600g chicken thighs, chopped",
+        "150g plain yoghurt",
+        "2 tsp garam masala",
+        "1 tsp paprika",
+        "1 tbsp butter or oil",
+        "1 onion, finely chopped",
+        "2 garlic cloves, crushed",
+        "1 tbsp grated ginger",
+        "400g passata or tinned tomatoes",
+        "100ml cream or evaporated milk",
+        "Cooked rice or naan, to serve"
+      ],
+      "method": [
+        "Mix chicken with yoghurt, garam masala and paprika, then leave while you start the sauce.",
+        "Heat butter or oil in a pan and cook the onion until soft.",
+        "Add garlic and ginger, then cook for 1 minute.",
+        "Add the chicken and cook until lightly browned.",
+        "Pour in passata or tomatoes, then simmer for 20 minutes until the chicken is cooked through.",
+        "Stir in cream or evaporated milk, adjust seasoning and serve with rice or naan."
+      ],
+      "substitutions": [
+        {
+          "original": "Ghee",
+          "substitute": "Butter or neutral oil"
+        },
+        {
+          "original": "Kashmiri chilli powder",
+          "substitute": "Mild chilli powder with paprika"
+        },
+        {
+          "original": "Fresh methi",
+          "substitute": "Dried fenugreek leaves or omit"
+        },
+        {
+          "original": "Double cream",
+          "substitute": "Evaporated milk or a small spoon of yoghurt"
+        }
+      ],
+      "budgetTips": [
+        "Chicken thighs give good flavour at a lower cost than breast.",
+        "Use passata or own-brand tinned tomatoes for the sauce.",
+        "Serve with rice instead of naan if you want the cheapest base.",
+        "Freeze leftover sauce in portions for quick curry nights."
+      ],
+      "travelConnection": "Butter chicken is tied to North Indian food culture and has become a familiar restaurant curry for many UK travellers. Dedicated India pages are not live yet, so the travel links below point to confirmed Asia and long-haul BudgetHolidayHub planning pages.",
+      "travelLinkKeys": [
+        "india"
+      ],
+      "relatedRecipes": [
+        "chicken-tikka-masala",
+        "dal-tadka",
+        "chana-masala"
+      ],
+      "faqs": [
+        {
+          "question": "Can I make butter chicken without cream?",
+          "answer": "Yes. Evaporated milk, a small spoon of yoghurt or a little extra butter can soften the tomato sauce."
+        },
+        {
+          "question": "Is butter chicken spicy?",
+          "answer": "This version is mild. Increase chilli powder if you want more heat."
+        },
+        {
+          "question": "Can I use leftover cooked chicken?",
+          "answer": "Yes. Make the sauce first, then add cooked chicken near the end and heat it through gently."
+        }
+      ],
+      "keywords": [
+        "butter chicken recipe",
+        "Indian curry",
+        "Indian holiday food",
+        "easy curry night"
+      ]
+    },
+    {
+      "slug": "chicken-tikka-masala",
+      "title": "Chicken Tikka Masala",
+      "h1": "Chicken Tikka Masala Recipe",
+      "seoTitle": "Chicken Tikka Masala Recipe for an Easy Curry Night | BudgetHolidayHub",
+      "metaDescription": "Make chicken tikka masala at home with a simple curry-night recipe, easy swaps and travel-inspired links to Indian food culture.",
+      "cuisine": "Indian",
+      "cuisineSlug": "indian-recipes",
+      "country": "India",
+      "inspiredBy": "Indian food culture and UK curry-house favourites",
+      "category": "Curry",
+      "prepTime": "20 minutes",
+      "cookTime": "30 minutes",
+      "totalTime": "50 minutes",
+      "prepTimeIso": "PT20M",
+      "cookTimeIso": "PT30M",
+      "totalTimeIso": "PT50M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 9-13",
+      "heroImage": "/assets/images/taste-the-world-indian.svg",
+      "imageAlt": "Chicken tikka masala travel-inspired recipe placeholder",
+      "intro": "Chicken tikka masala is ideal for an easy curry night at home. This version takes its cue from Indian food culture and UK curry-house favourites, with a practical sauce and simple swaps.",
+      "ingredients": [
+        "600g chicken thighs or breast, chopped",
+        "150g plain yoghurt",
+        "2 tsp tikka spice blend or garam masala",
+        "1 tbsp oil",
+        "1 onion, finely chopped",
+        "2 garlic cloves, crushed",
+        "1 tbsp grated ginger",
+        "1 tbsp tomato puree",
+        "400g tinned tomatoes",
+        "100ml cream, yoghurt or evaporated milk",
+        "Rice, naan and coriander, to serve"
+      ],
+      "method": [
+        "Coat chicken with yoghurt and tikka spice blend, then leave for 10 minutes or longer if you have time.",
+        "Brown the chicken in oil, then lift it out of the pan.",
+        "Cook onion until soft, then add garlic, ginger and tomato puree.",
+        "Add tinned tomatoes and simmer for 10 minutes.",
+        "Return the chicken to the pan and cook until done.",
+        "Stir in cream, yoghurt or evaporated milk and serve with rice or naan."
+      ],
+      "substitutions": [
+        {
+          "original": "Tikka spice blend",
+          "substitute": "Garam masala with paprika and a pinch of chilli"
+        },
+        {
+          "original": "Ghee",
+          "substitute": "Butter or neutral oil"
+        },
+        {
+          "original": "Kashmiri chilli powder",
+          "substitute": "Mild chilli powder with paprika"
+        },
+        {
+          "original": "Fresh coriander",
+          "substitute": "Flat-leaf parsley or omit"
+        }
+      ],
+      "budgetTips": [
+        "Use chicken thighs for better value and flavour.",
+        "Tinned tomatoes and tomato puree make a cheaper sauce base than jars.",
+        "Cook extra rice and use leftovers for lunch.",
+        "Add peppers or spinach to stretch the curry."
+      ],
+      "travelConnection": "Chicken tikka masala connects Indian flavours with UK curry-night culture. While BudgetHolidayHub builds out dedicated India travel pages, use the confirmed Asia and long-haul links below for budget trip planning.",
+      "travelLinkKeys": [
+        "india"
+      ],
+      "relatedRecipes": [
+        "butter-chicken",
+        "chana-masala",
+        "dal-tadka"
+      ],
+      "faqs": [
+        {
+          "question": "Can I make chicken tikka masala without a jar sauce?",
+          "answer": "Yes. Tinned tomatoes, onion, garlic, ginger and spices make a simple sauce base."
+        },
+        {
+          "question": "Can I make it ahead?",
+          "answer": "Yes. It keeps well in the fridge for 2 days and often tastes better after resting."
+        },
+        {
+          "question": "What can I use instead of cream?",
+          "answer": "Use evaporated milk, plain yoghurt or a splash of milk with a small knob of butter."
+        }
+      ],
+      "keywords": [
+        "chicken tikka masala recipe",
+        "easy curry night",
+        "Indian recipes",
+        "UK curry house"
+      ]
+    },
+    {
+      "slug": "chana-masala",
+      "title": "Chana Masala",
+      "h1": "Chana Masala Recipe",
+      "seoTitle": "Chana Masala Recipe: Budget Indian Chickpea Curry | BudgetHolidayHub",
+      "metaDescription": "Cook chana masala, a budget-friendly Indian chickpea curry with simple ingredients, vegetarian tips and travel-inspired flavour.",
+      "cuisine": "Indian",
+      "cuisineSlug": "indian-recipes",
+      "country": "India",
+      "inspiredBy": "Indian markets and everyday vegetarian cooking",
+      "category": "Vegetarian curry",
+      "prepTime": "10 minutes",
+      "cookTime": "25 minutes",
+      "totalTime": "35 minutes",
+      "prepTimeIso": "PT10M",
+      "cookTimeIso": "PT25M",
+      "totalTimeIso": "PT35M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 4-7",
+      "heroImage": "/assets/images/taste-the-world-indian.svg",
+      "imageAlt": "Chana masala travel-inspired recipe placeholder",
+      "intro": "Chana masala is a budget-friendly chickpea curry inspired by Indian markets, street food and everyday vegetarian cooking. It is filling, fast and ideal for pantry ingredients.",
+      "ingredients": [
+        "1 tbsp oil",
+        "1 onion, finely chopped",
+        "2 garlic cloves, crushed",
+        "1 tbsp grated ginger",
+        "1 tsp ground cumin",
+        "1 tsp ground coriander",
+        "1 tsp garam masala",
+        "400g tinned tomatoes",
+        "2 x 400g tins chickpeas, drained",
+        "Juice of 1 lemon or lime",
+        "Rice, yoghurt and coriander, to serve"
+      ],
+      "method": [
+        "Heat oil in a pan and cook onion until soft.",
+        "Add garlic, ginger and spices, then cook for 1 minute.",
+        "Add tinned tomatoes and simmer for 8-10 minutes until thickened.",
+        "Stir in chickpeas and a splash of water.",
+        "Simmer for 10-12 minutes, crushing a few chickpeas to thicken the sauce.",
+        "Finish with lemon or lime juice and serve with rice."
+      ],
+      "substitutions": [
+        {
+          "original": "Dried chickpeas",
+          "substitute": "Tinned chickpeas for speed"
+        },
+        {
+          "original": "Amchur powder",
+          "substitute": "Lemon or lime juice"
+        },
+        {
+          "original": "Fresh coriander",
+          "substitute": "Parsley or omit"
+        },
+        {
+          "original": "Fresh curry leaves",
+          "substitute": "Dried curry leaves or omit if unavailable"
+        }
+      ],
+      "budgetTips": [
+        "Tinned chickpeas are fast and still low cost.",
+        "Use dried chickpeas if you batch cook and want the cheapest option.",
+        "Serve with rice to make four generous portions.",
+        "Freeze leftovers for a quick vegetarian lunch."
+      ],
+      "travelConnection": "Chana masala is linked to Indian vegetarian cooking, market food and everyday meals that are built around pulses and spice. Until dedicated India guides are live, use the confirmed Asia planning links below.",
+      "travelLinkKeys": [
+        "india"
+      ],
+      "relatedRecipes": [
+        "dal-tadka",
+        "butter-chicken",
+        "goan-fish-curry"
+      ],
+      "faqs": [
+        {
+          "question": "Is chana masala vegan?",
+          "answer": "The curry itself can be vegan if you use oil and skip yoghurt when serving."
+        },
+        {
+          "question": "Can I use dried chickpeas?",
+          "answer": "Yes. Soak and cook them first, then use them in the recipe like tinned chickpeas."
+        },
+        {
+          "question": "How can I make chana masala thicker?",
+          "answer": "Crush some chickpeas into the sauce and simmer uncovered for a few extra minutes."
+        }
+      ],
+      "keywords": [
+        "chana masala recipe",
+        "budget Indian chickpea curry",
+        "vegetarian Indian recipe",
+        "Indian market food"
+      ]
+    },
+    {
+      "slug": "dal-tadka",
+      "title": "Dal Tadka",
+      "h1": "Dal Tadka Recipe",
+      "seoTitle": "Dal Tadka Recipe: Easy Indian Lentils at Home | BudgetHolidayHub",
+      "metaDescription": "Make dal tadka at home with lentils, spices and simple budget ingredients inspired by everyday Indian cooking.",
+      "cuisine": "Indian",
+      "cuisineSlug": "indian-recipes",
+      "country": "India",
+      "inspiredBy": "Everyday Indian food and vegetarian meals",
+      "category": "Lentils",
+      "prepTime": "10 minutes",
+      "cookTime": "35 minutes",
+      "totalTime": "45 minutes",
+      "prepTimeIso": "PT10M",
+      "cookTimeIso": "PT35M",
+      "totalTimeIso": "PT45M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 3-6",
+      "heroImage": "/assets/images/taste-the-world-indian.svg",
+      "imageAlt": "Dal tadka travel-inspired recipe placeholder",
+      "intro": "Dal tadka is a cheap, comforting lentil dish inspired by everyday Indian cooking. It uses simple pantry ingredients and a spiced oil finish to make lentils taste generous and satisfying.",
+      "ingredients": [
+        "250g red lentils or yellow split lentils",
+        "900ml water",
+        "1 tsp turmeric",
+        "1 tsp salt, plus more to taste",
+        "1 tbsp oil or butter",
+        "1 onion, finely chopped",
+        "2 garlic cloves, sliced",
+        "1 tsp cumin seeds or ground cumin",
+        "1 tomato, chopped, or 2 tbsp tinned tomatoes",
+        "1 tsp garam masala",
+        "Rice, chapati or flatbread, to serve"
+      ],
+      "method": [
+        "Rinse the lentils until the water runs mostly clear.",
+        "Simmer lentils with water, turmeric and salt for 20-25 minutes until soft.",
+        "Mash lightly with a spoon and add water if you prefer a looser dal.",
+        "In a small pan, heat oil or butter and fry onion until golden.",
+        "Add garlic, cumin, tomato and garam masala, then cook for 2 minutes.",
+        "Stir the spiced oil mixture into the lentils and serve with rice or flatbread."
+      ],
+      "substitutions": [
+        {
+          "original": "Ghee",
+          "substitute": "Butter or neutral oil"
+        },
+        {
+          "original": "Cumin seeds",
+          "substitute": "Ground cumin"
+        },
+        {
+          "original": "Fresh curry leaves",
+          "substitute": "Dried curry leaves or omit"
+        },
+        {
+          "original": "Fresh chilli",
+          "substitute": "Chilli flakes or mild chilli powder"
+        }
+      ],
+      "budgetTips": [
+        "Dried lentils are one of the cheapest high-protein pantry ingredients.",
+        "Make a double batch and freeze flat in portions.",
+        "Serve with rice for a very low-cost dinner.",
+        "Use tinned tomatoes if fresh tomatoes are expensive."
+      ],
+      "travelConnection": "Dal tadka reflects the everyday side of Indian food: simple ingredients, comfort, spice and low-cost cooking. If it makes you curious about food-led travel, start with the confirmed BudgetHolidayHub Asia and long-haul planning pages below.",
+      "travelLinkKeys": [
+        "india"
+      ],
+      "relatedRecipes": [
+        "chana-masala",
+        "butter-chicken",
+        "chicken-tikka-masala"
+      ],
+      "faqs": [
+        {
+          "question": "What lentils should I use for dal tadka?",
+          "answer": "Red lentils are easiest to find and cook quickly. Yellow split lentils also work but may take longer."
+        },
+        {
+          "question": "Can I make dal tadka vegan?",
+          "answer": "Yes. Use oil instead of butter or ghee."
+        },
+        {
+          "question": "Can I freeze dal?",
+          "answer": "Yes. Dal freezes well. Add a splash of water when reheating because it thickens as it cools."
+        }
+      ],
+      "keywords": [
+        "dal tadka recipe",
+        "easy Indian lentils",
+        "budget lentil recipe",
+        "vegetarian Indian food"
+      ]
+    },
+    {
+      "slug": "goan-fish-curry",
+      "title": "Goan Fish Curry",
+      "h1": "Goan Fish Curry Recipe",
+      "seoTitle": "Goan Fish Curry Recipe Inspired by Goa Holidays | BudgetHolidayHub",
+      "metaDescription": "Cook a Goan fish curry inspired by India's west coast, with coconut, spice, simple swaps and Goa holiday inspiration.",
+      "cuisine": "Indian",
+      "cuisineSlug": "indian-recipes",
+      "country": "India",
+      "inspiredBy": "Goa holidays and coastal Indian cooking",
+      "category": "Seafood curry",
+      "prepTime": "15 minutes",
+      "cookTime": "25 minutes",
+      "totalTime": "40 minutes",
+      "prepTimeIso": "PT15M",
+      "cookTimeIso": "PT25M",
+      "totalTimeIso": "PT40M",
+      "servings": 4,
+      "difficulty": "Easy",
+      "estimatedCost": "GBP 9-14",
+      "heroImage": "/assets/images/taste-the-world-indian.svg",
+      "imageAlt": "Goan fish curry travel-inspired recipe placeholder",
+      "intro": "Goan fish curry is inspired by India's west coast, where seafood, coconut and spice come together in coastal cooking. This version uses accessible white fish and supermarket ingredients.",
+      "ingredients": [
+        "500g white fish fillets, cut into chunks",
+        "1 tbsp oil",
+        "1 onion, finely chopped",
+        "2 garlic cloves, crushed",
+        "1 tbsp grated ginger",
+        "1 tsp turmeric",
+        "1 tsp ground coriander",
+        "1 tsp mild chilli powder",
+        "400ml coconut milk",
+        "150g tinned tomatoes or passata",
+        "Juice of 1 lime",
+        "Rice and coriander, to serve"
+      ],
+      "method": [
+        "Pat the fish dry and season lightly with salt.",
+        "Heat oil in a pan and cook onion until soft.",
+        "Add garlic, ginger, turmeric, coriander and chilli powder, then cook for 1 minute.",
+        "Add coconut milk and tomatoes, then simmer for 10 minutes.",
+        "Add the fish and simmer gently for 6-8 minutes until just cooked.",
+        "Finish with lime juice and serve with rice."
+      ],
+      "substitutions": [
+        {
+          "original": "Fresh curry leaves",
+          "substitute": "Dried curry leaves or omit if unavailable"
+        },
+        {
+          "original": "Kokum",
+          "substitute": "Lime juice or a small splash of tamarind"
+        },
+        {
+          "original": "Fresh coconut",
+          "substitute": "Tinned coconut milk"
+        },
+        {
+          "original": "Kashmiri chilli powder",
+          "substitute": "Mild chilli powder with paprika"
+        }
+      ],
+      "budgetTips": [
+        "Use frozen white fish fillets to lower the cost.",
+        "Do not overcook the fish; gentle simmering prevents waste.",
+        "Serve with rice to make the curry go further.",
+        "Use coconut milk from the world-food aisle if it is cheaper than branded tins."
+      ],
+      "travelConnection": "Goan fish curry is linked to India's west coast, where seafood, coconut and spice shape coastal meals. Dedicated Goa pages are not live yet, so the links below point to confirmed Asia and long-haul BudgetHolidayHub guides for now.",
+      "travelLinkKeys": [
+        "india"
+      ],
+      "relatedRecipes": [
+        "chana-masala",
+        "dal-tadka",
+        "butter-chicken"
+      ],
+      "faqs": [
+        {
+          "question": "What fish works best for Goan fish curry?",
+          "answer": "Use firm white fish such as cod, haddock, pollock or basa. Frozen fillets are fine."
+        },
+        {
+          "question": "Can I make Goan fish curry less spicy?",
+          "answer": "Yes. Use mild chilli powder and add extra lime at the end for brightness instead of heat."
+        },
+        {
+          "question": "Can I reheat fish curry?",
+          "answer": "Yes, but reheat it gently to avoid breaking up or overcooking the fish."
+        }
+      ],
+      "keywords": [
+        "Goan fish curry recipe",
+        "Goa holiday food",
+        "coastal Indian curry",
+        "fish curry"
+      ]
+    }
+  ]
+}

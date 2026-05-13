@@ -1,5 +1,6 @@
 import os
 import datetime
+import json
 
 base_url = "https://budgetholidayshub.com"
 focus_pages = [
@@ -79,6 +80,25 @@ if os.path.isdir(video_dir):
 
 video_pages.sort()
 
+taste_pages = []
+taste_data_path = os.path.join("data", "taste-the-world-recipes.json")
+if os.path.isfile(taste_data_path):
+    with open(taste_data_path, encoding="utf-8") as f:
+        taste_data = json.load(f)
+    taste_pages.append("taste-the-world/")
+    for cuisine in taste_data.get("cuisines", []):
+        taste_pages.append(f"taste-the-world/{cuisine['slug']}/")
+    for recipe in taste_data.get("recipes", []):
+        taste_pages.append(f"taste-the-world/{recipe['cuisineSlug']}/{recipe['slug']}/")
+elif os.path.isdir("taste-the-world"):
+    for root, _, files in os.walk("taste-the-world"):
+        if "index.html" not in files:
+            continue
+        rel = os.path.relpath(root, ".").replace(os.sep, "/")
+        taste_pages.append(f"{rel}/")
+
+taste_pages = sorted(set(taste_pages))
+
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
 sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
@@ -103,6 +123,12 @@ for path in money_pages:
 # Video pages
 for path in video_pages:
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-04-22</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
+
+# Taste the World recipe pages
+for path in taste_pages:
+    depth = path.count("/")
+    priority = "0.9" if depth <= 2 else "0.8"
+    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-05-13</lastmod>\n<changefreq>weekly</changefreq>\n<priority>{priority}</priority>\n</url>\n\n'
 
 sitemap += '</urlset>\n'
 

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Thai recipes placeholder</title>
+  <desc id="desc">Graphic placeholder for Thai travel-inspired recipes.</desc>
+  <rect width="1200" height="675" fill="#f5f7fb"/>
+  <rect x="70" y="70" width="1060" height="535" rx="30" fill="#ffffff" stroke="#d8dee9" stroke-width="4"/>
+  <rect x="136" y="134" width="928" height="144" rx="22" fill="#0a4da3"/>
+  <rect x="136" y="318" width="430" height="190" rx="22" fill="#dcfce7"/>
+  <rect x="620" y="318" width="444" height="190" rx="22" fill="#fef3c7"/>
+  <circle cx="252" cy="413" r="55" fill="#22c55e"/>
+  <circle cx="736" cy="413" r="55" fill="#f97316"/>
+  <path d="M825 384h110v58c0 43-35 78-78 78h-16c-43 0-78-35-78-78v-58z" fill="#ffffff" stroke="#92400e" stroke-width="10"/>
+  <path d="M210 217c48-44 95-44 143 0 48-44 96-44 144 0 48-44 95-44 143 0" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <text x="160" y="565" fill="#1c2739" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Thai Recipes</text>
+</svg>

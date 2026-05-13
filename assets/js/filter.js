@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function filterGuides() {
+        if (!searchInput) return;
         const searchTerm = searchInput.value.toLowerCase();
         const section = searchInput.closest('section');
         if (!section) return;
