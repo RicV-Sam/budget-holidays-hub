@@ -102,6 +102,9 @@ def main():
             else:
                 meta_seen[meta] = rel
 
+        if rel.startswith("guides/") and "last updated" not in lower_html:
+            issues.append((rel, "Missing visible 'Last updated' marker"))
+
     print(f"Pages scanned: {len(list(iter_public_pages()))}")
     if not issues:
         print("SEO consistency audit passed.")
