@@ -21,6 +21,7 @@ current_sprint_lastmod_paths = {
     "guides/cheap-holidays-mauritius-from-uk/",
     "guides/cheap-holidays-spain-from-uk/",
     "guides/cheap-holidays-turkey-all-inclusive-from-uk/",
+    "guides/cheap-holidays-zante-from-uk/",
     "guides/greece-vs-turkey-all-inclusive/",
 }
 
