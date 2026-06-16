@@ -18,7 +18,7 @@ The audit checks public HTML pages for titles, meta descriptions, canonicals, H1
 
 ## Bing And IndexNow Submission
 
-After publishing important URL changes, refresh the sitemap and dry-run search submissions:
+After publishing important URL changes, refresh the sitemap and dry-run search submissions. By default, both submission scripts only use sitemap URLs with recent `lastmod` values:
 
 ```powershell
 npm run generate:sitemap
@@ -36,4 +36,11 @@ To use the Bing Webmaster URL Submission API, set `BING_WEBMASTER_API_KEY` first
 
 ```powershell
 npm run submit:bing
+```
+
+Use `--all` only for a deliberate full-sitemap resubmission:
+
+```powershell
+npm run submit:bing -- --all
+npm run submit:indexnow -- --all
 ```
