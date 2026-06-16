@@ -1,0 +1,56 @@
+name: Submit changed URLs to search engines
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: search-submit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      BING_WEBMASTER_API_KEY: ${{ secrets.BING_WEBMASTER_API_KEY }}
+      BING_SITE_URL: https://budgetholidayshub.com
+      BING_SITEMAP_URL: sitemap.xml
+      INDEXNOW_HOST: budgetholidayshub.com
+      INDEXNOW_SITEMAP: sitemap.xml
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Wait for GitHub Pages sitemap
+        shell: bash
+        run: |
+          for attempt in {1..20}; do
+            echo "Checking live sitemap attempt $attempt/20..."
+            if curl -fsS https://budgetholidayshub.com/sitemap.xml -o live-sitemap.xml && cmp -s sitemap.xml live-sitemap.xml; then
+              echo "Live sitemap matches committed sitemap."
+              exit 0
+            fi
+            sleep 30
+          done
+
+          echo "::warning::Live sitemap did not match the committed sitemap before timeout; submitting committed changed URLs anyway."
+
+      - name: Submit changed URLs to Bing Webmaster
+        if: env.BING_WEBMASTER_API_KEY != ''
+        continue-on-error: true
+        run: npm run submit:bing
+
+      - name: Submit changed URLs to IndexNow
+        continue-on-error: true
+        run: npm run submit:indexnow

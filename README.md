@@ -38,6 +38,8 @@ To use the Bing Webmaster URL Submission API, set `BING_WEBMASTER_API_KEY` first
 npm run submit:bing
 ```
 
+GitHub Actions also submits recently changed URLs after pushes to `main`. To enable the Bing step there, add `BING_WEBMASTER_API_KEY` as a repository secret in GitHub. IndexNow runs without a GitHub secret because the public key file is committed in the site root.
+
 Use `--all` only for a deliberate full-sitemap resubmission:
 
 ```powershell
