@@ -16,6 +16,7 @@ current_sprint_lastmod_paths = {
     "guides/",
     "guides/best-travel-booking-websites-uk/",
     "guides/cheap-family-holidays-spain/",
+    "guides/cheap-holidays-antalya-from-uk/",
     "guides/cheap-holidays-greece-from-uk/",
     "guides/cheap-holidays-mauritius-from-uk/",
     "guides/cheap-holidays-spain-from-uk/",
