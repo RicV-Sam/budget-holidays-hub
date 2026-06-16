@@ -1,0 +1,11 @@
+{
+  "name": "budget-holidays-hub",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "generate:sitemap": "python sitemap_gen.py",
+    "submit:bing": "node scripts/submit-bing.mjs",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs"
+  }
+}
