@@ -66,18 +66,38 @@ recent_lastmod_paths = {
 }
 
 current_money_lastmod_paths = {
+    "make-money-for-travel/affiliate-marketing-for-travel-fund-uk.html",
     "make-money-for-travel/ai-tools-vs-side-hustles-for-travel.html",
     "make-money-for-travel/best-ai-tools-to-make-money-for-travel.html",
+    "make-money-for-travel/best-ai-tools-to-make-money-online-2026-uk.html",
     "make-money-for-travel/best-side-hustles-uk-2026-ranked.html",
+    "make-money-for-travel/content-writing-side-hustle-for-travel.html",
+    "make-money-for-travel/delivery-apps-to-save-for-holiday-uk.html",
+    "make-money-for-travel/earn-500-fast-uk-for-travel.html",
+    "make-money-for-travel/freelance-jobs-for-travel-uk.html",
     "make-money-for-travel/freelancing-for-travel-income.html",
     "make-money-for-travel/how-to-make-500-for-travel-2026.html",
+    "make-money-for-travel/how-to-make-money-for-travel-uk.html",
     "make-money-for-travel/how-to-make-money-online-uk-beginners-2026.html",
     "make-money-for-travel/make-money-fast-for-holiday-uk.html",
+    "make-money-for-travel/make-money-online-uk-beginners-for-travel.html",
+    "make-money-for-travel/no-experience-remote-work-for-travel-uk.html",
+    "make-money-for-travel/online-tutoring-to-fund-travel-uk.html",
+    "make-money-for-travel/passive-income-for-travel-beginners-uk.html",
     "make-money-for-travel/passive-income-ideas-for-travel-2026.html",
+    "make-money-for-travel/pet-sitting-and-dog-walking-for-travel-money-uk.html",
+    "make-money-for-travel/print-on-demand-for-travel-fund-uk.html",
     "make-money-for-travel/remote-jobs-to-fund-travel.html",
+    "make-money-for-travel/remote-jobs-to-travel-the-world-uk.html",
+    "make-money-for-travel/reselling-items-to-fund-travel-uk.html",
+    "make-money-for-travel/sell-digital-products-for-travel-income-uk.html",
     "make-money-for-travel/side-hustles-to-fund-holidays-uk-2026.html",
+    "make-money-for-travel/side-hustles-to-pay-for-holidays.html",
     "make-money-for-travel/side-hustles-vs-freelancing-for-travel.html",
     "make-money-for-travel/side-hustles-vs-passive-income-for-travel.html",
+    "make-money-for-travel/social-media-management-for-travel-income-uk.html",
+    "make-money-for-travel/virtual-assistant-work-for-travel-uk.html",
+    "make-money-for-travel/weekend-side-hustles-for-travel-fund-uk.html",
 }
 
 # Get all guides

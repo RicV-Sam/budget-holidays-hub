@@ -11,6 +11,12 @@ from urllib.parse import urlparse
 BASE_URL = "https://budgetholidayshub.com"
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
 IGNORED_DIRS = {".git", "_site", "test-results"}
+PUBLIC_PLACEHOLDER_PATTERNS = (
+    "monetization-placeholder",
+    "future adsense",
+    "future sponsor",
+    "future ad placement",
+)
 
 
 class PageParser(HTMLParser):
@@ -187,6 +193,9 @@ def audit(root, check_videos=False):
             issues.append(("performance", rel, f"{page.images_missing_dimensions} image(s) missing width/height dimensions."))
         if page.placeholder_hrefs:
             issues.append(("links", rel, f"{page.placeholder_hrefs} placeholder href=\"#\" link(s) on public page."))
+        raw_html = path.read_text(encoding="utf-8", errors="ignore").lower()
+        if any(pattern in raw_html for pattern in PUBLIC_PLACEHOLDER_PATTERNS):
+            issues.append(("content", rel, "Public page contains unresolved monetisation placeholder copy."))
 
         for raw_json in page.json_ld:
             try:
