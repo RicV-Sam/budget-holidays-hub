@@ -29,6 +29,7 @@ class PageParser(HTMLParser):
         self._in_json_ld = False
         self._json_ld_buffer = ""
         self.hrefs = []
+        self.placeholder_hrefs = 0
         self.has_site_nav = False
         self.has_site_footer = False
 
@@ -59,6 +60,8 @@ class PageParser(HTMLParser):
             self._json_ld_buffer = ""
         elif tag == "a" and attr.get("href"):
             self.hrefs.append(attr["href"])
+            if attr["href"].strip() == "#":
+                self.placeholder_hrefs += 1
 
         if tag == "nav" and "site-nav" in class_name:
             self.has_site_nav = True
@@ -182,6 +185,8 @@ def audit(root, check_videos=False):
             issues.append(("accessibility", rel, f"{page.images_missing_alt} image(s) missing alt text."))
         if page.images_missing_dimensions:
             issues.append(("performance", rel, f"{page.images_missing_dimensions} image(s) missing width/height dimensions."))
+        if page.placeholder_hrefs:
+            issues.append(("links", rel, f"{page.placeholder_hrefs} placeholder href=\"#\" link(s) on public page."))
 
         for raw_json in page.json_ld:
             try:

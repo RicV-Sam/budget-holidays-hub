@@ -65,6 +65,21 @@ recent_lastmod_paths = {
     "guides/cheapest-winter-sun-destinations-uk/",
 }
 
+current_money_lastmod_paths = {
+    "make-money-for-travel/ai-tools-vs-side-hustles-for-travel.html",
+    "make-money-for-travel/best-ai-tools-to-make-money-for-travel.html",
+    "make-money-for-travel/best-side-hustles-uk-2026-ranked.html",
+    "make-money-for-travel/freelancing-for-travel-income.html",
+    "make-money-for-travel/how-to-make-500-for-travel-2026.html",
+    "make-money-for-travel/how-to-make-money-online-uk-beginners-2026.html",
+    "make-money-for-travel/make-money-fast-for-holiday-uk.html",
+    "make-money-for-travel/passive-income-ideas-for-travel-2026.html",
+    "make-money-for-travel/remote-jobs-to-fund-travel.html",
+    "make-money-for-travel/side-hustles-to-fund-holidays-uk-2026.html",
+    "make-money-for-travel/side-hustles-vs-freelancing-for-travel.html",
+    "make-money-for-travel/side-hustles-vs-passive-income-for-travel.html",
+}
+
 # Get all guides
 guides = []
 for d in os.listdir("guides"):
@@ -140,7 +155,8 @@ for path in guides:
 
 # Money pages
 for path in money_pages:
-    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-04-20</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
+    lastmod = "2026-06-23" if path in current_money_lastmod_paths else "2026-04-20"
+    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
 
 # Video pages
 for path in video_pages:
