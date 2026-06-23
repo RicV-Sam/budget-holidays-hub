@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MOJIBAKE_GUARDED_PAGES = {
     "guides/best-travel-booking-websites-uk/index.html",
+    "guides/cheap-holidays-barbados-from-uk/index.html",
     "guides/cheap-holidays-bali-from-uk/index.html",
     "guides/cheap-holidays-cyprus-from-uk/index.html",
     "guides/cheap-holidays-mallorca-from-uk/index.html",
