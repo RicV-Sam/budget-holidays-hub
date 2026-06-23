@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MOJIBAKE_GUARDED_PAGES = {
     "guides/best-travel-booking-websites-uk/index.html",
     "guides/cheap-holidays-mauritius-from-uk/index.html",
+    "guides/cheap-holidays-thailand-from-uk/index.html",
     "guides/cheap-holidays-turkey-all-inclusive-from-uk/index.html",
     "make-money-for-travel/how-to-make-500-for-travel-2026.html",
 }
