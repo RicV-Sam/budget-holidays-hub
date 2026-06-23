@@ -18,14 +18,18 @@ current_sprint_lastmod_paths = {
     "guides/cheap-family-holidays-spain/",
     "guides/cheap-holidays-antalya-from-uk/",
     "guides/cheap-holidays-greece-from-uk/",
+    "guides/cheap-holidays-lanzarote-from-uk/",
     "guides/cheap-holidays-mauritius-from-uk/",
     "guides/cheap-holidays-spain-from-uk/",
     "guides/cheap-holidays-turkey-all-inclusive-from-uk/",
     "guides/cheap-holidays-zante-from-uk/",
+    "guides/cheapest-holidays-under-500-uk/",
     "guides/greece-vs-turkey-all-inclusive/",
+    "guides/prague-vs-budapest/",
     "guides/spain-vs-greece-holidays/",
     "guides/spain-vs-portugal-holidays/",
     "guides/turkey-vs-spain-all-inclusive/",
+    "guides/tenerife-vs-antalya-winter-sun/",
 }
 
 pages = [
