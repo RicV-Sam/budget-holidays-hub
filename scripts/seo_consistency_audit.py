@@ -7,8 +7,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MOJIBAKE_GUARDED_PAGES = {
     "guides/best-travel-booking-websites-uk/index.html",
+    "guides/cheap-holidays-mauritius-from-uk/index.html",
     "make-money-for-travel/how-to-make-500-for-travel-2026.html",
 }
+MOJIBAKE_CODEPOINT_MARKERS = tuple(chr(codepoint) for codepoint in (0x00C2, 0x00E2, 0x00F0))
 MOJIBAKE_MARKERS = ("â", "ð", "Â", "ï¸", "�")
 
 
@@ -111,7 +113,9 @@ def main():
             issues.append((rel, "Missing visible 'Last updated' marker"))
         if re.search(r"\*\*[^*]+\*\*|__[^_]+__", html):
             issues.append((rel, "Visible Markdown formatting artifact found"))
-        if rel in MOJIBAKE_GUARDED_PAGES and any(marker in html for marker in MOJIBAKE_MARKERS):
+        if rel in MOJIBAKE_GUARDED_PAGES and any(
+            marker in html for marker in MOJIBAKE_MARKERS + MOJIBAKE_CODEPOINT_MARKERS
+        ):
             issues.append((rel, "Visible mojibake/encoding artifact found"))
 
     print(f"Pages scanned: {len(list(iter_public_pages()))}")
