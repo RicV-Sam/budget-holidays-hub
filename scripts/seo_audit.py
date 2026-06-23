@@ -41,6 +41,7 @@ class PageParser(HTMLParser):
         self._in_json_ld = False
         self._json_ld_buffer = ""
         self.hrefs = []
+        self.external_links_missing_rel = 0
         self.placeholder_hrefs = 0
         self.has_site_nav = False
         self.has_site_footer = False
@@ -73,9 +74,14 @@ class PageParser(HTMLParser):
             self._in_json_ld = True
             self._json_ld_buffer = ""
         elif tag == "a" and attr.get("href"):
-            self.hrefs.append(attr["href"])
-            if attr["href"].strip() == "#":
+            href = attr["href"]
+            self.hrefs.append(href)
+            if href.strip() == "#":
                 self.placeholder_hrefs += 1
+            parsed_href = urlparse(href)
+            if parsed_href.scheme in {"http", "https"} and parsed_href.netloc and parsed_href.netloc != urlparse(BASE_URL).netloc:
+                if not (attr.get("rel") or "").strip():
+                    self.external_links_missing_rel += 1
 
         if tag == "nav" and "site-nav" in class_name:
             self.has_site_nav = True
@@ -203,6 +209,8 @@ def audit(root, check_videos=False):
             issues.append(("performance", rel, f"{page.images_missing_dimensions} image(s) missing width/height dimensions."))
         if page.placeholder_hrefs:
             issues.append(("links", rel, f"{page.placeholder_hrefs} placeholder href=\"#\" link(s) on public page."))
+        if page.external_links_missing_rel:
+            issues.append(("links", rel, f"{page.external_links_missing_rel} external link(s) missing rel attribute."))
         raw_html = path.read_text(encoding="utf-8", errors="ignore").lower()
         if any(pattern in raw_html for pattern in PUBLIC_PLACEHOLDER_PATTERNS):
             issues.append(("content", rel, "Public page contains unresolved monetisation placeholder copy."))
