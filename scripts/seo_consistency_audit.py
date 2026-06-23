@@ -104,6 +104,8 @@ def main():
 
         if rel.startswith("guides/") and "last updated" not in lower_html:
             issues.append((rel, "Missing visible 'Last updated' marker"))
+        if re.search(r"\*\*[^*]+\*\*|__[^_]+__", html):
+            issues.append((rel, "Visible Markdown formatting artifact found"))
 
     print(f"Pages scanned: {len(list(iter_public_pages()))}")
     if not issues:
