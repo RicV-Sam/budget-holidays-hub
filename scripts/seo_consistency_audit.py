@@ -10,6 +10,7 @@ MOJIBAKE_GUARDED_PAGES = {
     "guides/cheap-holidays-bali-from-uk/index.html",
     "guides/cheap-holidays-mauritius-from-uk/index.html",
     "guides/cheap-holidays-seychelles-from-uk/index.html",
+    "guides/cheap-holidays-singapore-from-uk/index.html",
     "guides/cheap-holidays-thailand-from-uk/index.html",
     "guides/cheap-holidays-turkey-all-inclusive-from-uk/index.html",
     "guides/cheap-holidays-venice-from-uk/index.html",
