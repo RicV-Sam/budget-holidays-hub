@@ -46,6 +46,9 @@ jobs:
 
           echo "::warning::Live sitemap did not match the committed sitemap before timeout; submitting committed changed URLs anyway."
 
+      - name: Check live sitemap URL health
+        run: npm run check:live-sitemap
+
       - name: Submit changed URLs to Bing Webmaster
         if: env.BING_WEBMASTER_API_KEY != ''
         continue-on-error: true
