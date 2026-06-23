@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MOJIBAKE_GUARDED_PAGES = {
     "guides/best-travel-booking-websites-uk/index.html",
+    "make-money-for-travel/how-to-make-500-for-travel-2026.html",
 }
 MOJIBAKE_MARKERS = ("â", "ð", "Â", "ï¸", "�")
 
