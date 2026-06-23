@@ -29,6 +29,7 @@ MOJIBAKE_GUARDED_PAGES = {
     "guides/cheap-holidays-fuerteventura-from-uk/index.html",
     "guides/cheap-holidays-gran-canaria-from-uk/index.html",
     "guides/cheap-holidays-greece-all-inclusive-from-uk/index.html",
+    "guides/cheap-holidays-greece-from-uk/index.html",
     "guides/cheap-holidays-ibiza-from-uk/index.html",
     "guides/cheap-holidays-indonesia-from-uk/index.html",
     "guides/cheap-holidays-italy-all-inclusive-from-uk/index.html",
