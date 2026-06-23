@@ -23,6 +23,9 @@ current_sprint_lastmod_paths = {
     "guides/cheap-holidays-turkey-all-inclusive-from-uk/",
     "guides/cheap-holidays-zante-from-uk/",
     "guides/greece-vs-turkey-all-inclusive/",
+    "guides/spain-vs-greece-holidays/",
+    "guides/spain-vs-portugal-holidays/",
+    "guides/turkey-vs-spain-all-inclusive/",
 }
 
 pages = [
