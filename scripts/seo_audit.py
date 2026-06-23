@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 
 BASE_URL = "https://budgetholidayshub.com"
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
-IGNORED_DIRS = {".git", "test-results"}
+IGNORED_DIRS = {".git", "_site", "test-results"}
 
 
 class PageParser(HTMLParser):

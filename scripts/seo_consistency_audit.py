@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def iter_public_pages():
     for path in ROOT.rglob("*.html"):
         rel = path.relative_to(ROOT).as_posix()
-        if rel.startswith(".") or rel.startswith("templates/"):
+        if rel.startswith(".") or rel.startswith("_site/") or rel.startswith("templates/"):
             continue
         yield path, rel
 
