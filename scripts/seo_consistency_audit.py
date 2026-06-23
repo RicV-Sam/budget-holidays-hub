@@ -9,6 +9,7 @@ MOJIBAKE_GUARDED_PAGES = {
     "guides/best-travel-booking-websites-uk/index.html",
     "guides/cheap-holidays-bali-from-uk/index.html",
     "guides/cheap-holidays-cyprus-from-uk/index.html",
+    "guides/cheap-holidays-mallorca-from-uk/index.html",
     "guides/cheap-holidays-mauritius-from-uk/index.html",
     "guides/cheap-holidays-santorini-from-uk/index.html",
     "guides/cheap-holidays-seychelles-from-uk/index.html",
