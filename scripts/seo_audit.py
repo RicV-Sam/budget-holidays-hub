@@ -24,6 +24,7 @@ class PageParser(HTMLParser):
         self.h1_count = 0
         self.image_count = 0
         self.images_missing_alt = 0
+        self.images_missing_dimensions = 0
         self.json_ld = []
         self._in_json_ld = False
         self._json_ld_buffer = ""
@@ -49,6 +50,10 @@ class PageParser(HTMLParser):
             self.image_count += 1
             if "alt" not in attr:
                 self.images_missing_alt += 1
+            if (attr.get("src") or "").startswith("/assets/images/") and (
+                "width" not in attr or "height" not in attr
+            ):
+                self.images_missing_dimensions += 1
         elif tag == "script" and (attr.get("type") or "").lower() == "application/ld+json":
             self._in_json_ld = True
             self._json_ld_buffer = ""
@@ -175,6 +180,8 @@ def audit(root, check_videos=False):
             issues.append(("content", rel, f"Expected exactly one H1, found {page.h1_count}."))
         if page.images_missing_alt:
             issues.append(("accessibility", rel, f"{page.images_missing_alt} image(s) missing alt text."))
+        if page.images_missing_dimensions:
+            issues.append(("performance", rel, f"{page.images_missing_dimensions} image(s) missing width/height dimensions."))
 
         for raw_json in page.json_ld:
             try:

@@ -150,7 +150,7 @@ for path in video_pages:
 for path in taste_pages:
     depth = path.count("/")
     priority = "0.9" if depth <= 2 else "0.8"
-    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-05-13</lastmod>\n<changefreq>weekly</changefreq>\n<priority>{priority}</priority>\n</url>\n\n'
+    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-06-23</lastmod>\n<changefreq>weekly</changefreq>\n<priority>{priority}</priority>\n</url>\n\n'
 
 sitemap += '</urlset>\n'
 
