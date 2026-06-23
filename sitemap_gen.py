@@ -13,6 +13,10 @@ focus_pages = [
 
 current_sprint_lastmod_paths = {
     "",
+    "about/",
+    "affiliate-disclosure/",
+    "contact/",
+    "editorial-standards/",
     "guides/",
     "guides/best-travel-booking-websites-uk/",
     "guides/cheap-family-holidays-spain/",
@@ -30,6 +34,10 @@ current_sprint_lastmod_paths = {
     "guides/spain-vs-portugal-holidays/",
     "guides/turkey-vs-spain-all-inclusive/",
     "guides/tenerife-vs-antalya-winter-sun/",
+    "how-we-research/",
+    "planner/",
+    "privacy/",
+    "terms/",
 }
 
 pages = [

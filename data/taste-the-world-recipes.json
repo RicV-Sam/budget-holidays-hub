@@ -105,7 +105,7 @@
       "intro": "Bring the flavours of Thailand into your kitchen with simple Thai recipes inspired by street food, beach holidays and classic dishes from Bangkok, Phuket and beyond.",
       "cardDescription": "Fragrant curries, noodles and street-food favourites inspired by Thailand holidays.",
       "image": "/assets/images/taste-the-world-thai.svg",
-      "imageAlt": "Taste the World Thai recipes placeholder",
+      "imageAlt": "Thai recipe dishes inspired by Thailand holidays",
       "whyTitle": "Why Thai Food Works So Well at Home",
       "whyBody": [
         "Thai cooking is built around quick heat, fresh herbs, coconut milk, noodles and balanced sauces, which makes it practical for weeknight cooking.",
@@ -142,7 +142,7 @@
       "intro": "Explore Indian recipes inspired by colourful markets, coastal holidays, family kitchens and classic dishes from across India.",
       "cardDescription": "Comforting curries, vegetarian classics and regional dishes inspired by India's food culture.",
       "image": "/assets/images/taste-the-world-indian.svg",
-      "imageAlt": "Taste the World Indian recipes placeholder",
+      "imageAlt": "Indian recipe dishes inspired by India holidays",
       "whyTitle": "Indian Food, Travel and Budget Cooking",
       "whyBody": [
         "Indian cooking is ideal for budget kitchens because lentils, chickpeas, rice, spices and tinned tomatoes can create generous meals without a high weekly spend.",
@@ -192,7 +192,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 8-12",
       "heroImage": "/assets/images/taste-the-world-thai.svg",
-      "imageAlt": "Easy Thai green curry travel-inspired recipe placeholder",
+      "imageAlt": "Easy Thai green curry with coconut sauce and vegetables",
       "intro": "This easy Thai green curry is inspired by the creamy, fragrant curries served across Thailand. It is designed for home cooks using ingredients that are easier to find in UK and European supermarkets while keeping the dish fresh, spicy and full of flavour.",
       "ingredients": [
         "1 tbsp neutral oil",
@@ -294,7 +294,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 7-11",
       "heroImage": "/assets/images/taste-the-world-thai.svg",
-      "imageAlt": "Pad Thai travel-inspired recipe placeholder",
+      "imageAlt": "Pad Thai noodles with lime, peanuts and herbs",
       "intro": "This pad Thai is inspired by the quick noodle dishes served at Thai night markets. It keeps the sweet, sour and savoury balance but uses ingredients that are realistic for everyday UK and European kitchens.",
       "ingredients": [
         "220g flat rice noodles",
@@ -397,7 +397,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 8-12",
       "heroImage": "/assets/images/taste-the-world-thai.svg",
-      "imageAlt": "Thai red curry travel-inspired recipe placeholder",
+      "imageAlt": "Thai red curry with coconut sauce and vegetables",
       "intro": "This Thai red curry is a simple coconut curry for home cooks who want big flavour without a long shopping list. It is inspired by the relaxed curry dishes you might order on a Thailand beach holiday or in a casual city restaurant.",
       "ingredients": [
         "1 tbsp neutral oil",
@@ -498,7 +498,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 7-10",
       "heroImage": "/assets/images/taste-the-world-thai.svg",
-      "imageAlt": "Thai basil chicken travel-inspired recipe placeholder",
+      "imageAlt": "Thai basil chicken stir fry with rice",
       "intro": "Thai basil chicken is a fast stir-fry inspired by the everyday street-food lunches served across Bangkok. This version keeps the method quick and practical, with supermarket swaps for fresh herbs and sauces.",
       "ingredients": [
         "1 tbsp neutral oil",
@@ -594,7 +594,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 8-12",
       "heroImage": "/assets/images/taste-the-world-thai.svg",
-      "imageAlt": "Chicken satay travel-inspired recipe placeholder",
+      "imageAlt": "Chicken satay skewers with peanut-style sauce",
       "intro": "Chicken satay is inspired by the skewers you might find at Thai markets, beach stalls and casual holiday restaurants. This version uses a simple marinade and peanut-style sauce for an easy dinner or sharing plate.",
       "ingredients": [
         "600g chicken thighs, sliced into strips",
@@ -691,7 +691,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 9-13",
       "heroImage": "/assets/images/taste-the-world-indian.svg",
-      "imageAlt": "Butter chicken travel-inspired recipe placeholder",
+      "imageAlt": "Butter chicken curry with creamy tomato sauce",
       "intro": "This butter chicken is a mild, creamy curry inspired by North Indian cooking and Indian restaurant favourites. It keeps the sauce smooth and family friendly while using simple supermarket ingredients.",
       "ingredients": [
         "600g chicken thighs, chopped",
@@ -789,7 +789,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 9-13",
       "heroImage": "/assets/images/taste-the-world-indian.svg",
-      "imageAlt": "Chicken tikka masala travel-inspired recipe placeholder",
+      "imageAlt": "Chicken tikka masala curry with rice",
       "intro": "Chicken tikka masala is ideal for an easy curry night at home. This version takes its cue from Indian food culture and UK curry-house favourites, with a practical sauce and simple swaps.",
       "ingredients": [
         "600g chicken thighs or breast, chopped",
@@ -887,7 +887,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 4-7",
       "heroImage": "/assets/images/taste-the-world-indian.svg",
-      "imageAlt": "Chana masala travel-inspired recipe placeholder",
+      "imageAlt": "Chana masala chickpea curry with spices",
       "intro": "Chana masala is a budget-friendly chickpea curry inspired by Indian markets, street food and everyday vegetarian cooking. It is filling, fast and ideal for pantry ingredients.",
       "ingredients": [
         "1 tbsp oil",
@@ -985,7 +985,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 3-6",
       "heroImage": "/assets/images/taste-the-world-indian.svg",
-      "imageAlt": "Dal tadka travel-inspired recipe placeholder",
+      "imageAlt": "Dal tadka lentils finished with spiced oil",
       "intro": "Dal tadka is a cheap, comforting lentil dish inspired by everyday Indian cooking. It uses simple pantry ingredients and a spiced oil finish to make lentils taste generous and satisfying.",
       "ingredients": [
         "250g red lentils or yellow split lentils",
@@ -1083,7 +1083,7 @@
       "difficulty": "Easy",
       "estimatedCost": "GBP 9-14",
       "heroImage": "/assets/images/taste-the-world-indian.svg",
-      "imageAlt": "Goan fish curry travel-inspired recipe placeholder",
+      "imageAlt": "Goan fish curry with coconut and spice",
       "intro": "Goan fish curry is inspired by India's west coast, where seafood, coconut and spice come together in coastal cooking. This version uses accessible white fish and supermarket ingredients.",
       "ingredients": [
         "500g white fish fillets, cut into chunks",

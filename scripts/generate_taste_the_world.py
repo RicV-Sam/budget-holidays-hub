@@ -43,6 +43,12 @@ def image_url(base_url, image_path):
     return absolute_url(base_url, image_path)
 
 
+def image_size_attrs(image_path):
+    if image_path.startswith("/assets/images/taste-the-world-") and image_path.endswith(".svg"):
+        return ' width="1200" height="675"'
+    return ""
+
+
 def json_script(payload):
     return (
         '<script type="application/ld+json">\n'
@@ -123,14 +129,6 @@ def analytics_and_ads():
   function gtag(){dataLayer.push(arguments);}
   gtag("js", new Date());
   gtag("config", "G-VEDYHTE156");
-</script>
-<script data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
-(function () {
-    var script = document.createElement("script");
-    script.async = 1;
-    script.src = "https://emrld.ltd/NTEwMTE2.js?t=510116";
-    document.head.appendChild(script);
-})();
 </script>"""
 
 
@@ -277,7 +275,7 @@ def recipe_card(recipe, cuisine, location="hub"):
     )
     return f"""<a class="guide-card recipe-card" href="{escape(recipe_url(recipe), quote=True)}"{attrs}>
     <div class="guide-card-image">
-        <img src="{escape(recipe['heroImage'], quote=True)}" alt="{escape(recipe['imageAlt'], quote=True)}" loading="lazy">
+        <img src="{escape(recipe['heroImage'], quote=True)}" alt="{escape(recipe['imageAlt'], quote=True)}" loading="lazy"{image_size_attrs(recipe['heroImage'])}>
     </div>
     <div class="guide-card-content">
         <span class="badge badge-city">{escape(recipe['cuisine'])}</span>
@@ -300,7 +298,7 @@ def cuisine_card(cuisine, recipe_count):
     )
     return f"""<a class="guide-card cuisine-card" href="{escape(cuisine_url(cuisine), quote=True)}"{attrs}>
     <div class="guide-card-image">
-        <img src="{escape(cuisine['image'], quote=True)}" alt="{escape(cuisine['imageAlt'], quote=True)}" loading="lazy">
+        <img src="{escape(cuisine['image'], quote=True)}" alt="{escape(cuisine['imageAlt'], quote=True)}" loading="lazy"{image_size_attrs(cuisine['image'])}>
     </div>
     <div class="guide-card-content">
         <span class="badge badge-popular">{recipe_count} recipes</span>
@@ -651,7 +649,7 @@ def render_recipe_page(data, recipe):
             <p class="recipe-intro">{escape(recipe['intro'])}</p>
         </div>
         <div class="recipe-hero-media">
-            <img src="{escape(recipe['heroImage'], quote=True)}" alt="{escape(recipe['imageAlt'], quote=True)}" loading="eager">
+            <img src="{escape(recipe['heroImage'], quote=True)}" alt="{escape(recipe['imageAlt'], quote=True)}" loading="eager"{image_size_attrs(recipe['heroImage'])}>
         </div>
     </header>
 

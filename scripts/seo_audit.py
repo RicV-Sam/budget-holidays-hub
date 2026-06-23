@@ -17,6 +17,11 @@ PUBLIC_PLACEHOLDER_PATTERNS = (
     "future sponsor",
     "future ad placement",
 )
+BLOCKED_SCRIPT_PATTERNS = (
+    "emrld.ltd",
+    "ntewmte2.js",
+    "data-noptimize",
+)
 
 
 class PageParser(HTMLParser):
@@ -30,6 +35,7 @@ class PageParser(HTMLParser):
         self.h1_count = 0
         self.image_count = 0
         self.images_missing_alt = 0
+        self.images_placeholder_alt = 0
         self.images_missing_dimensions = 0
         self.json_ld = []
         self._in_json_ld = False
@@ -57,6 +63,8 @@ class PageParser(HTMLParser):
             self.image_count += 1
             if "alt" not in attr:
                 self.images_missing_alt += 1
+            elif "placeholder" in (attr.get("alt") or "").lower():
+                self.images_placeholder_alt += 1
             if (attr.get("src") or "").startswith("/assets/images/") and (
                 "width" not in attr or "height" not in attr
             ):
@@ -189,6 +197,8 @@ def audit(root, check_videos=False):
             issues.append(("content", rel, f"Expected exactly one H1, found {page.h1_count}."))
         if page.images_missing_alt:
             issues.append(("accessibility", rel, f"{page.images_missing_alt} image(s) missing alt text."))
+        if page.images_placeholder_alt:
+            issues.append(("accessibility", rel, f"{page.images_placeholder_alt} image(s) use placeholder alt text."))
         if page.images_missing_dimensions:
             issues.append(("performance", rel, f"{page.images_missing_dimensions} image(s) missing width/height dimensions."))
         if page.placeholder_hrefs:
@@ -196,6 +206,8 @@ def audit(root, check_videos=False):
         raw_html = path.read_text(encoding="utf-8", errors="ignore").lower()
         if any(pattern in raw_html for pattern in PUBLIC_PLACEHOLDER_PATTERNS):
             issues.append(("content", rel, "Public page contains unresolved monetisation placeholder copy."))
+        if any(pattern in raw_html for pattern in BLOCKED_SCRIPT_PATTERNS):
+            issues.append(("performance", rel, "Public page contains blocked third-party script markup."))
 
         for raw_json in page.json_ld:
             try:
