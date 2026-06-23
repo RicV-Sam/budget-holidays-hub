@@ -57,6 +57,7 @@ MOJIBAKE_GUARDED_PAGES = {
     "guides/cheap-holidays-sharm-el-sheikh-from-uk/index.html",
     "guides/cheap-holidays-singapore-from-uk/index.html",
     "guides/cheap-holidays-south-africa-from-uk/index.html",
+    "guides/cheap-holidays-spain-from-uk/index.html",
     "guides/cheap-holidays-spain-all-inclusive-from-uk/index.html",
     "guides/cheap-holidays-split-from-uk/index.html",
     "guides/cheap-holidays-sri-lanka-from-uk/index.html",
