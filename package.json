@@ -6,6 +6,7 @@
   "scripts": {
     "prepare:pages": "node scripts/prepare-pages-artifact.mjs",
     "generate:sitemap": "python sitemap_gen.py",
+    "check:live-seo": "node scripts/check-live-seo.mjs",
     "check:live-sitemap": "node scripts/check-live-sitemap.mjs",
     "submit:bing": "node scripts/submit-bing.mjs",
     "submit:indexnow": "node scripts/submit-indexnow.mjs"

@@ -49,6 +49,9 @@ jobs:
       - name: Check live sitemap URL health
         run: npm run check:live-sitemap
 
+      - name: Check live SEO crawl hygiene
+        run: npm run check:live-seo
+
       - name: Submit changed URLs to Bing Webmaster
         if: env.BING_WEBMASTER_API_KEY != ''
         continue-on-error: true
