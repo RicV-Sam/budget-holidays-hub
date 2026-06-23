@@ -21,6 +21,7 @@ MOJIBAKE_GUARDED_PAGES = {
     "guides/cheap-holidays-thailand-from-uk/index.html",
     "guides/cheap-holidays-turkey-all-inclusive-from-uk/index.html",
     "guides/cheap-holidays-venice-from-uk/index.html",
+    "guides/cheap-holidays-vietnam-from-uk/index.html",
     "make-money-for-travel/how-to-make-500-for-travel-2026.html",
 }
 MOJIBAKE_CODEPOINT_MARKERS = tuple(chr(codepoint) for codepoint in (0x00C2, 0x00E2, 0x00F0))
