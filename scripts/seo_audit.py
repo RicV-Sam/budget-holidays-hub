@@ -100,6 +100,12 @@ def is_noindex(page):
     return "noindex" in page.robots.lower()
 
 
+def canonical_url_for_path(url_path):
+    if url_path == "/":
+        return BASE_URL + "/"
+    return BASE_URL + url_path
+
+
 def internal_target(root, href):
     if href.startswith(("http://", "https://", "mailto:", "tel:", "#")):
         return None
@@ -162,6 +168,9 @@ def audit(root, check_videos=False):
             issues.append(("metadata", rel, "Missing meta description."))
         if not page.canonical:
             issues.append(("metadata", rel, "Missing canonical URL."))
+        elif page.canonical.rstrip("/") != canonical_url_for_path(url_path).rstrip("/"):
+            expected = canonical_url_for_path(url_path)
+            issues.append(("metadata", rel, f"Canonical should be {expected}, found {page.canonical}."))
         if page.h1_count != 1:
             issues.append(("content", rel, f"Expected exactly one H1, found {page.h1_count}."))
         if page.images_missing_alt:
@@ -197,6 +206,12 @@ def audit(root, check_videos=False):
             if target and not target.exists():
                 rel = source_path.relative_to(root).as_posix()
                 issues.append(("links", rel, f"Broken internal link: {href}"))
+                continue
+            if target and target.exists():
+                target_url = path_to_url_path(root, target)
+                if target_url in noindex_pages:
+                    rel = source_path.relative_to(root).as_posix()
+                    issues.append(("links", rel, f"Internal link points to noindex page: {href}"))
 
     inlinks = {url_path: set() for url_path in pages}
     for source_url, (_, page) in pages.items():
