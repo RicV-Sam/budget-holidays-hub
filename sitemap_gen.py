@@ -38,13 +38,31 @@ current_sprint_lastmod_paths = {
     "planner/",
     "privacy/",
     "terms/",
+    "visit-uk/",
+    "visit-uk/gatwick-airport-to-london/",
+    "visit-uk/london-on-a-budget/",
+}
+
+# Only use this date for pages whose visible main content received a
+# substantive review. Site-shell navigation updates alone do not qualify.
+substantive_2026_07_28_lastmod_paths = {
+    "",
+    "about/",
+    "editorial-standards/",
+    "guides/",
+    "guides/greece-vs-turkey-all-inclusive/",
+    "how-we-research/",
+    "visit-uk/",
+    "visit-uk/gatwick-airport-to-london/",
+    "visit-uk/london-on-a-budget/",
 }
 
 pages = [
     ("", "daily", "1.0"),
+    ("visit-uk/", "weekly", "1.0"),
+    ("visit-uk/gatwick-airport-to-london/", "weekly", "0.9"),
+    ("visit-uk/london-on-a-budget/", "weekly", "0.9"),
     ("guides/", "weekly", "0.9"),
-    ("make-money-for-travel/", "weekly", "0.9"),
-    ("videos/", "weekly", "0.9"),
     ("planner/", "monthly", "0.7"),
     ("calculator/", "monthly", "0.7"),
     ("contact/", "monthly", "0.5"),
@@ -168,7 +186,10 @@ sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
 # Main pages
 for path, freq, prio in pages:
-    lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else "2026-03-24"
+    if path in substantive_2026_07_28_lastmod_paths:
+        lastmod = "2026-07-28"
+    else:
+        lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else "2026-03-24"
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>{freq}</changefreq>\n<priority>{prio}</priority>\n</url>\n\n'
 
 # Focus pages
@@ -181,20 +202,8 @@ for path in guides:
     lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else ("2026-04-20" if path in recent_lastmod_paths else "2026-03-17")
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
 
-# Money pages
-for path in money_pages:
-    lastmod = "2026-06-23" if path in current_money_lastmod_paths else "2026-04-20"
-    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
-
-# Video pages
-for path in video_pages:
-    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-04-22</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
-
-# Taste the World recipe pages
-for path in taste_pages:
-    depth = path.count("/")
-    priority = "0.9" if depth <= 2 else "0.8"
-    sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>2026-06-23</lastmod>\n<changefreq>weekly</changefreq>\n<priority>{priority}</priority>\n</url>\n\n'
+# The income, recipe and related video libraries remain publicly accessible,
+# but they are intentionally noindex and therefore excluded from this sitemap.
 
 sitemap += '</urlset>\n'
 

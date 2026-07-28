@@ -6,6 +6,10 @@
   "scripts": {
     "prepare:pages": "node scripts/prepare-pages-artifact.mjs",
     "generate:sitemap": "python sitemap_gen.py",
+    "standardise:shell": "python scripts/standardise_site_shell.py",
+    "refocus:authority": "python scripts/refocus_authority.py",
+    "optimize:images": "python scripts/optimize_images.py",
+    "audit:seo": "python scripts/seo_audit.py && python scripts/seo_consistency_audit.py",
     "check:live-seo": "node scripts/check-live-seo.mjs",
     "check:live-sitemap": "node scripts/check-live-sitemap.mjs",
     "submit:bing": "node scripts/submit-bing.mjs",

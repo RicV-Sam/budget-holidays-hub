@@ -1,11 +1,37 @@
 # Budget Holidays Hub
 
+The primary editorial direction is now inbound UK travel under `/visit-uk/`.
+The existing `/guides/` library remains available as "Holidays from the UK."
+See `pivot-plan.md` for the evidence labels and field-guide publishing model.
+Use `fieldwork/trip-capture-template.md` during real trips and
+`templates/uk-field-guide-template.html` when turning the evidence into a page.
+
 ## Local SEO QA
 
 Run the local crawlability and SEO audit before publishing content batches:
 
 ```powershell
 python scripts/seo_audit.py
+```
+
+Or run both crawl and consistency audits:
+
+```powershell
+npm run audit:seo
+```
+
+Site-wide navigation, language metadata, favicons and deferred local scripts
+can be normalised with:
+
+```powershell
+npm run standardise:shell
+```
+
+Responsive WebP versions of the committed JPEG library can be regenerated
+with:
+
+```powershell
+npm run optimize:images
 ```
 
 To also validate YouTube embeds through oEmbed:

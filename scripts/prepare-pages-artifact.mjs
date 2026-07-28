@@ -24,6 +24,7 @@ const publicPaths = [
   "sitemap.xml",
   "taste-the-world",
   "terms",
+  "visit-uk",
   "videos",
 ];
 

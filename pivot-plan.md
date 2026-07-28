@@ -1,141 +1,209 @@
-# Budget Holidays Hub Pivot Plan v3
+# Budget Holidays Hub: Inbound UK Pivot
 
-## Strategic Shift
+Updated 28 July 2026.
 
-The current plan is not failing because the site lacks pages. It is underperforming because too many pages are waiting for authority while only a small set are receiving meaningful Search Console tests.
+## The New Position
 
-The pivot is therefore:
+Budget Holidays Hub will help international visitors plan better-value trips to
+Britain using a UK local's perspective, transparent research and first-hand
+field notes.
 
-- From broad content expansion to evidence-led optimization.
-- From "publish more destinations" to "improve pages Google is already testing."
-- From a separate money-content experiment to a travel-funding support cluster.
-- From passive waiting to weekly Search Console decisions.
+The promise is not "expert on every place in Britain." The promise is:
 
-## Current Evidence
+- Practical advice written from the UK.
+- Routes and decisions that can be checked locally.
+- Clear labels for desk research, personal visits and field tests.
+- Honest costs, friction and trade-offs.
+- Official links for entry rules, fares, closures and safety information.
 
-Latest 7-day Search Console snapshot, checked 2026-04-29:
+The existing holidays-from-the-UK library stays live. It becomes a secondary
+outbound cluster while the inbound UK cluster earns its own search demand.
 
-| Metric | Current | Prior weekly note |
-| --- | ---: | ---: |
-| Clicks | 4 | 2 |
-| Impressions | 660 | 781 |
-| CTR | 0.61% | 0.26% |
-| Avg position | 34.43 | 32.57 |
+## Why This Is a Better Fit
 
-The site is getting small but useful tests. The priority is to turn those tests into stronger CTR, stronger internal signals, and clearer topical authority before adding another large content batch.
+1. Local access makes original reporting possible.
+2. Field notes create evidence competitors cannot reproduce by summarising the
+   same search results.
+3. UK trip planning contains high-friction decisions: ETA or visa checks,
+   airport transfers, London transport, rail fares and realistic regional
+   routes.
+4. VisitBritain's February 2026 forecast estimated 45.5 million inbound visits
+   for 2026, so the audience is material.
+5. Google's current direction continues to reward original, useful,
+   topic-specific content and links prominently to source material in AI search
+   experiences.
 
-## What Changes Now
+## Audience and Main Job
 
-### 1. Pause Broad Publishing
+Primary audience:
 
-Do not add another large batch of destination, money, video, tools, or programmatic pages until existing pages show stronger traction.
+- English-speaking visitors planning a first or second trip to the UK.
+- Travellers who care about value but do not want the cheapest choice to make
+  the journey worse.
+- Visitors trying to combine London with one other city or region.
 
-Allowed new content:
+Primary job:
 
-- One page only if Search Console exposes a clear query gap.
-- One supporting page only if it strengthens a page already getting impressions.
-- One tool only if it can be linked naturally from multiple pages already receiving impressions.
+> Help me choose a realistic UK route, understand what it will cost and avoid
+> mistakes a local would spot.
 
-### 2. Optimize Pages Google Is Already Testing
+## Content Architecture
 
-Use this priority order from the 2026-04-29 tracker:
+### 1. Visit the UK Hub
 
-1. `/guides/greece-vs-turkey-all-inclusive/`
-2. `/guides/best-travel-booking-websites-uk/`
-3. `/guides/cheap-holidays-thailand-from-uk/`
-4. `/guides/cheap-holidays-mauritius-from-uk/`
-5. `/make-money-for-travel/`
+URL: `/visit-uk/`
 
-Decision rules:
+This is the main inbound landing page and internal-link hub. It covers:
 
-- If a page ranks top 10 with impressions but weak clicks, improve title, meta, intro verdict, and above-the-fold decision support.
-- If a page ranks 30-70 with impressions, improve topical depth, exact-query coverage, supporting FAQs, and internal links.
-- If a page has almost no impressions, leave it alone unless it supports a stronger page.
+- Before-you-travel checks.
+- Route length and number of bases.
+- Train versus coach versus car.
+- London as a first base.
+- How to add one useful second stop.
 
-### 3. Reframe The Money Pivot
+### 2. London Cornerstone
 
-The money cluster should not become a separate generic side-hustle site. Its role is to answer one travel-specific question:
+URL: `/visit-uk/london-on-a-budget/`
 
-How can a UK traveller afford the trip they want?
+This answers the highest-friction first-visit questions:
 
-Keep the `/make-money-for-travel/` cluster, but connect it directly to holiday outcomes:
+- Contactless and fare caps.
+- Where to stay by transport line rather than landmark.
+- Free anchors and area-based days.
+- Airport-transfer mistakes.
+- A realistic short itinerary.
 
-- Travel pages should link to relevant funding guides only where useful.
-- Money pages should link back to destination or booking pages that turn income into a realistic trip.
-- Avoid generic money content unless it clearly supports travel intent.
+### 3. Field Guides
 
-### 4. Strengthen Commercial Intent
+Publish a field guide only when a real trip answers a distinct planning
+question. Good examples:
 
-Commercial pages should get priority over broad informational pages because they are closer to monetization.
+- Is a specific day trip worth doing without a car?
+- Which airport-to-centre route is easiest with luggage?
+- Can a visitor see a city properly as a day trip, or should they stay over?
+- Does a popular attraction pass save money on a realistic itinerary?
+- What does a rainy-day version of the route look like?
 
-Priority commercial angles:
+Do not publish generic "[place] travel guide" pages simply to create volume.
 
-- Best travel booking websites.
-- Package holiday comparisons.
-- All-inclusive comparison pages.
-- Destination pages with clear package or booking intent.
-- Travel-funding pages that naturally introduce tools, platforms, or booking workflows.
+### 4. Existing Outbound Library
+
+URL: `/guides/`
+
+Keep current URLs, canonicals and internal links. Label this clearly as
+"Holidays from the UK." Do not delete or redirect ranking pages while they
+still have impressions or useful backlinks.
+
+## Evidence Labels
+
+Every inbound UK guide uses one of these:
+
+- **Locally researched:** current official information, route checks and local
+  context; no claim that the exact journey was completed.
+- **Personally visited:** the writer has been there; the visit date and limits
+  are stated.
+- **Field tested:** the published route, timings, spend and practical details
+  were deliberately checked for the guide.
+- **Official check required:** a current rule, fare, timetable or closure must
+  be verified with the responsible body.
+
+Never turn a locally researched page into a field-tested page without doing the
+journey and recording the evidence.
+
+## Fieldwork Checklist
+
+Before:
+
+- Define the reader question.
+- Save the planned route and official timetable.
+- Record expected ticket, entry and food costs.
+- Note accessibility and weather questions to check.
+
+During:
+
+- Record door-to-door time and each change.
+- Keep dated cost notes.
+- Check luggage, steps, seating, toilets and mobile signal.
+- Record queue time, crowding and the wet-weather fallback.
+- Note what was not worth the cost or detour.
+
+After:
+
+- Publish the visit date and evidence label.
+- Separate durable advice from a temporary disruption.
+- Add actual spend without personal payment details.
+- State who should choose a different route.
+- Link the field guide from the UK hub and at least one related guide.
 
 ## 30-Day Execution Plan
 
-### Week 1
+### Week 1: Establish the cluster
 
-- Request indexing for the updated Greece vs Turkey page.
-- Commit and retain the weekly Search Console tracker.
-- Optimize `/guides/best-travel-booking-websites-uk/` for CTR and commercial intent.
-- Add natural internal links from the top comparison pages to relevant booking and funding guides.
+- Launch the inbound homepage, `/visit-uk/` hub and London cornerstone.
+- Update site-wide navigation so every public page links to the inbound hub.
+- Update About, Research and Editorial Standards with the evidence model.
+- Submit the new URLs through the existing sitemap and IndexNow workflow after
+  deployment.
 
-### Week 2
+### Week 2: Collect demand
 
-- Review Search Console movement for Greece vs Turkey.
-- Improve `/guides/cheap-holidays-thailand-from-uk/` for query coverage around cheap Thailand holidays, Thailand holiday packages, and Thailand breaks.
-- Improve `/guides/cheap-holidays-mauritius-from-uk/` for package/deal language.
+- Create a Search Console page filter for `/visit-uk/`.
+- Track impressions, queries, countries and devices separately from outbound
+  pages.
+- Use autocomplete, Search Console and visitor questions to identify one real
+  route problem worth testing.
+- Do not publish another city overview.
 
-### Week 3
+### Week 3: Complete one field trip
 
-- Audit the `/make-money-for-travel/` hub for clarity, encoding issues, and strongest links to travel outcomes.
-- Pick 5 money pages that support travel intent best and improve only those.
-- Add reciprocal links between those money pages and relevant travel pages.
+- Choose a trip reachable from the author's actual UK base.
+- Test one route question end to end.
+- Capture original notes and useful, privacy-safe photographs.
+- Publish one field guide with a clear verdict and visit date.
 
-### Week 4
+### Week 4: Strengthen the path
 
-- Compare fresh 7-day Search Console data against the 2026-04-29 baseline.
-- Decide whether the next month should focus on CTR fixes, ranking support, or pruning/noindexing weak pages.
-- Do not publish a new content batch unless Search Console data supports it.
+- Link the field guide from the relevant hub sections.
+- Improve the London or UK hub only where the new evidence adds value.
+- Compare early impressions and query wording.
+- Choose the next trip from evidence, not a pre-written destination list.
 
-## Measurement Rules
+## Measurement
 
-Track weekly:
+Track inbound and outbound clusters separately:
 
-- Clicks.
-- Impressions.
-- CTR.
-- Average position.
-- Top pages gaining impressions.
-- Top pages losing impressions.
-- Queries with impressions and no clicks.
-- Pages indexed but not earning impressions.
+- Indexed pages.
+- Impressions and clicks.
+- Non-brand queries.
+- Queries entering positions 10–30.
+- CTR for pages already in the top 10.
+- Internal clicks from the homepage to `/visit-uk/`.
+- Visits to official-source links.
+- Engagement with the evidence and field-note sections.
 
-Success for the pivot is not "more pages." Success is:
-
-- More clicks from existing impressions.
-- More pages moving from position 30-70 into position 10-30.
-- More commercial pages receiving impressions.
-- Cleaner internal links between travel, booking, and travel-funding content.
+The first success threshold is not a page count. It is one UK page earning
+relevant impressions, then one field guide improving the cluster with original
+evidence.
 
 ## Guardrails
 
-- Do not remove existing guide URLs.
-- Do not change canonical URLs unless fixing a confirmed canonical issue.
-- Do not add large batches of content without Search Console evidence.
-- Do not make the money cluster generic; every page should connect back to travel affordability.
-- Keep the static GitHub Pages structure simple and fast.
-- Run `python scripts/seo_audit.py` before publishing meaningful batches.
+- Preserve existing outbound URLs and canonicals.
+- Do not claim first-hand experience that did not happen.
+- Do not update dates without a substantive content or evidence change.
+- Do not copy current legal, fare or safety information without linking the
+  official source.
+- Do not publish multiple thin place pages.
+- Do not mix recipes or generic side-hustle content into the inbound homepage.
+- Keep core content crawlable without JavaScript.
+- Run the local SEO audits and real mobile/desktop checks before publishing.
 
 ## Next Best Action
 
-The next page to improve after the live Greece vs Turkey CTR update is:
+Choose the first field trip based on the author's real UK location. The best
+starting test is usually:
 
-`/guides/best-travel-booking-websites-uk/`
+> A popular visitor journey from the nearest international arrival hub to a
+> worthwhile city, attraction or day-trip destination.
 
-Reason: it has commercial intent, Search Console impressions, existing affiliate relevance, and a clear opportunity to improve the snippet, comparison table, and booking workflow.
+That produces genuinely local advice and avoids pretending that London is the
+only useful entry point to Britain.
