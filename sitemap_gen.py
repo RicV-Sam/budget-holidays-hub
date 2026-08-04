@@ -43,6 +43,11 @@ current_sprint_lastmod_paths = {
     "visit-uk/london-on-a-budget/",
 }
 
+substantive_2026_08_04_lastmod_paths = {
+    "guides/",
+    "guides/greece-vs-turkey-all-inclusive/",
+}
+
 # Only use this date for pages whose visible main content received a
 # substantive review. Site-shell navigation updates alone do not qualify.
 substantive_2026_07_28_lastmod_paths = {
@@ -186,7 +191,9 @@ sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
 # Main pages
 for path, freq, prio in pages:
-    if path in substantive_2026_07_28_lastmod_paths:
+    if path in substantive_2026_08_04_lastmod_paths:
+        lastmod = "2026-08-04"
+    elif path in substantive_2026_07_28_lastmod_paths:
         lastmod = "2026-07-28"
     else:
         lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else "2026-03-24"
@@ -194,12 +201,18 @@ for path, freq, prio in pages:
 
 # Focus pages
 for path in focus_pages:
-    lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else ("2026-04-20" if path in recent_lastmod_paths else "2026-03-24")
+    if path in substantive_2026_08_04_lastmod_paths:
+        lastmod = "2026-08-04"
+    else:
+        lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else ("2026-04-20" if path in recent_lastmod_paths else "2026-03-24")
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n\n'
 
 # Other guides
 for path in guides:
-    lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else ("2026-04-20" if path in recent_lastmod_paths else "2026-03-17")
+    if path in substantive_2026_08_04_lastmod_paths:
+        lastmod = "2026-08-04"
+    else:
+        lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else ("2026-04-20" if path in recent_lastmod_paths else "2026-03-17")
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
 
 # The income, recipe and related video libraries remain publicly accessible,
