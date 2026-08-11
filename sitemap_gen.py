@@ -52,6 +52,7 @@ substantive_2026_08_04_lastmod_paths = {
 substantive_2026_08_11_lastmod_paths = {
     "guides/",
     "guides/best-travel-booking-websites-uk/",
+    "guides/free-audiobook-trial-uk/",
     "visit-uk/",
     "visit-uk/avoid-motorway-fuel-prices/",
 }
