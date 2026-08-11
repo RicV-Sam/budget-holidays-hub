@@ -39,6 +39,7 @@ current_sprint_lastmod_paths = {
     "privacy/",
     "terms/",
     "visit-uk/",
+    "visit-uk/avoid-motorway-fuel-prices/",
     "visit-uk/gatwick-airport-to-london/",
     "visit-uk/london-on-a-budget/",
 }
@@ -51,6 +52,8 @@ substantive_2026_08_04_lastmod_paths = {
 substantive_2026_08_11_lastmod_paths = {
     "guides/",
     "guides/best-travel-booking-websites-uk/",
+    "visit-uk/",
+    "visit-uk/avoid-motorway-fuel-prices/",
 }
 
 # Only use this date for pages whose visible main content received a
@@ -70,6 +73,7 @@ substantive_2026_07_28_lastmod_paths = {
 pages = [
     ("", "daily", "1.0"),
     ("visit-uk/", "weekly", "1.0"),
+    ("visit-uk/avoid-motorway-fuel-prices/", "weekly", "0.9"),
     ("visit-uk/gatwick-airport-to-london/", "weekly", "0.9"),
     ("visit-uk/london-on-a-budget/", "weekly", "0.9"),
     ("guides/", "weekly", "0.9"),

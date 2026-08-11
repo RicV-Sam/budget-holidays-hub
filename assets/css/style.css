@@ -2010,7 +2010,8 @@ section.card table td:last-child {
     border-left: 5px solid #0b6f77;
 }
 
-.quick-verdict h2 {
+.quick-verdict h2,
+.quick-verdict h3 {
     margin: 0 0 8px;
     font-size: 1.05rem;
     text-transform: uppercase;
