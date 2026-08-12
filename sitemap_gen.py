@@ -57,6 +57,12 @@ substantive_2026_08_11_lastmod_paths = {
     "visit-uk/avoid-motorway-fuel-prices/",
 }
 
+substantive_2026_08_12_lastmod_paths = {
+    "affiliate-disclosure/",
+    "guides/",
+    "guides/travel-essentials-amazon-uk/",
+}
+
 # Only use this date for pages whose visible main content received a
 # substantive review. Site-shell navigation updates alone do not qualify.
 substantive_2026_07_28_lastmod_paths = {
@@ -201,7 +207,9 @@ sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
 # Main pages
 for path, freq, prio in pages:
-    if path in substantive_2026_08_11_lastmod_paths:
+    if path in substantive_2026_08_12_lastmod_paths:
+        lastmod = "2026-08-12"
+    elif path in substantive_2026_08_11_lastmod_paths:
         lastmod = "2026-08-11"
     elif path in substantive_2026_08_04_lastmod_paths:
         lastmod = "2026-08-04"
@@ -213,7 +221,9 @@ for path, freq, prio in pages:
 
 # Focus pages
 for path in focus_pages:
-    if path in substantive_2026_08_11_lastmod_paths:
+    if path in substantive_2026_08_12_lastmod_paths:
+        lastmod = "2026-08-12"
+    elif path in substantive_2026_08_11_lastmod_paths:
         lastmod = "2026-08-11"
     elif path in substantive_2026_08_04_lastmod_paths:
         lastmod = "2026-08-04"
@@ -223,7 +233,9 @@ for path in focus_pages:
 
 # Other guides
 for path in guides:
-    if path in substantive_2026_08_11_lastmod_paths:
+    if path in substantive_2026_08_12_lastmod_paths:
+        lastmod = "2026-08-12"
+    elif path in substantive_2026_08_11_lastmod_paths:
         lastmod = "2026-08-11"
     elif path in substantive_2026_08_04_lastmod_paths:
         lastmod = "2026-08-04"
