@@ -44,6 +44,11 @@ current_sprint_lastmod_paths = {
     "visit-uk/london-on-a-budget/",
 }
 
+substantive_2026_08_25_lastmod_paths = {
+    "guides/",
+    "guides/greece-vs-turkey-all-inclusive/",
+}
+
 substantive_2026_08_24_lastmod_paths = {
     "visit-uk/",
     "visit-uk/lands-end-cornwall-on-a-budget/",
@@ -218,7 +223,9 @@ sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
 # Main pages
 for path, freq, prio in pages:
-    if path in substantive_2026_08_24_lastmod_paths:
+    if path in substantive_2026_08_25_lastmod_paths:
+        lastmod = "2026-08-25"
+    elif path in substantive_2026_08_24_lastmod_paths:
         lastmod = "2026-08-24"
     elif path in substantive_2026_08_18_lastmod_paths:
         lastmod = "2026-08-18"
@@ -236,7 +243,9 @@ for path, freq, prio in pages:
 
 # Focus pages
 for path in focus_pages:
-    if path in substantive_2026_08_18_lastmod_paths:
+    if path in substantive_2026_08_25_lastmod_paths:
+        lastmod = "2026-08-25"
+    elif path in substantive_2026_08_18_lastmod_paths:
         lastmod = "2026-08-18"
     elif path in substantive_2026_08_12_lastmod_paths:
         lastmod = "2026-08-12"
@@ -250,7 +259,9 @@ for path in focus_pages:
 
 # Other guides
 for path in guides:
-    if path in substantive_2026_08_18_lastmod_paths:
+    if path in substantive_2026_08_25_lastmod_paths:
+        lastmod = "2026-08-25"
+    elif path in substantive_2026_08_18_lastmod_paths:
         lastmod = "2026-08-18"
     elif path in substantive_2026_08_12_lastmod_paths:
         lastmod = "2026-08-12"
