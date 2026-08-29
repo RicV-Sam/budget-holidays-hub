@@ -163,6 +163,49 @@ def load_sitemap(root):
     return paths
 
 
+def load_sitemap_lastmods(root):
+    sitemap_path = root / "sitemap.xml"
+    if not sitemap_path.exists():
+        return {}
+    text = sitemap_path.read_text(encoding="utf-8", errors="ignore")
+    records = {}
+    for block in re.findall(r"<url>(.*?)</url>", text, flags=re.I | re.S):
+        loc_match = re.search(r"<loc>(.*?)</loc>", block, flags=re.I | re.S)
+        lastmod_match = re.search(r"<lastmod>(.*?)</lastmod>", block, flags=re.I | re.S)
+        if not loc_match or not lastmod_match:
+            continue
+        loc = loc_match.group(1).strip()
+        if not loc.startswith(BASE_URL):
+            continue
+        records[urlparse(loc).path or "/"] = lastmod_match.group(1).strip()
+    return records
+
+
+def article_date_modified(raw_json):
+    def find_article(value):
+        if isinstance(value, dict):
+            page_type = value.get("@type")
+            if page_type == "Article" or (
+                isinstance(page_type, list) and "Article" in page_type
+            ):
+                return value.get("dateModified")
+            for child in value.values():
+                result = find_article(child)
+                if result:
+                    return result
+        elif isinstance(value, list):
+            for child in value:
+                result = find_article(child)
+                if result:
+                    return result
+        return None
+
+    try:
+        return find_article(json.loads(raw_json))
+    except json.JSONDecodeError:
+        return None
+
+
 def check_video_oembed(video_id, timeout=20):
     url = f"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={video_id}&format=json"
     with urllib.request.urlopen(url, timeout=timeout) as response:
@@ -232,12 +275,32 @@ def audit(root, check_videos=False):
                 issues.append(("schema", rel, "Money page missing JSON-LD."))
 
     sitemap_paths = load_sitemap(root)
+    sitemap_lastmods = load_sitemap_lastmods(root)
     for url_path in sorted(public_pages - sitemap_paths):
         if url_path.startswith("/templates/"):
             continue
         issues.append(("sitemap", url_path, "Public indexable page is missing from sitemap.xml."))
     for url_path in sorted(sitemap_paths - public_pages):
         issues.append(("sitemap", url_path, "Sitemap URL is missing or points to a noindex page."))
+
+    for url_path, (path, page) in pages.items():
+        if is_noindex(page) or url_path not in sitemap_lastmods:
+            continue
+        dates = [article_date_modified(raw_json) for raw_json in page.json_ld]
+        date_modified = next((value for value in dates if value), None)
+        if not date_modified:
+            continue
+        article_date = str(date_modified)[:10]
+        sitemap_date = sitemap_lastmods[url_path][:10]
+        if article_date != sitemap_date:
+            rel = path.relative_to(root).as_posix()
+            issues.append(
+                (
+                    "sitemap",
+                    rel,
+                    f"Sitemap lastmod {sitemap_date} does not match Article dateModified {article_date}.",
+                )
+            )
 
     for source_url, (source_path, page) in pages.items():
         if is_noindex(page):

@@ -1,8 +1,65 @@
 import os
 import datetime
 import json
+import re
 
 base_url = "https://budgetholidayshub.com"
+
+
+def article_date_modified(path):
+    """Return an Article's declared dateModified when the page provides one."""
+    page_path = os.path.join(path, "index.html") if path else "index.html"
+    if not os.path.isfile(page_path):
+        return None
+
+    with open(page_path, encoding="utf-8", errors="ignore") as page_file:
+        html = page_file.read()
+
+    json_ld_blocks = re.findall(
+        r'<script\b[^>]*\btype=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        html,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    def find_article_date(value):
+        if isinstance(value, dict):
+            page_type = value.get("@type")
+            if page_type == "Article" or (
+                isinstance(page_type, list) and "Article" in page_type
+            ):
+                return value.get("dateModified")
+            for child in value.values():
+                result = find_article_date(child)
+                if result:
+                    return result
+        elif isinstance(value, list):
+            for child in value:
+                result = find_article_date(child)
+                if result:
+                    return result
+        return None
+
+    for raw_json in json_ld_blocks:
+        try:
+            date_modified = find_article_date(json.loads(raw_json))
+        except json.JSONDecodeError:
+            continue
+        if not date_modified:
+            continue
+        try:
+            datetime.date.fromisoformat(date_modified)
+        except (TypeError, ValueError):
+            continue
+        return date_modified
+
+    return None
+
+
+def resolved_lastmod(path, fallback):
+    """Prefer a page's verifiable Article date over rollout-date fallbacks."""
+    return article_date_modified(path) or fallback
+
+
 focus_pages = [
     "guides/cheap-holidays-spain-from-uk/",
     "guides/best-travel-booking-websites-uk/",
@@ -248,6 +305,7 @@ for path, freq, prio in pages:
         lastmod = "2026-07-28"
     else:
         lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else "2026-03-24"
+    lastmod = resolved_lastmod(path, lastmod)
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>{freq}</changefreq>\n<priority>{prio}</priority>\n</url>\n\n'
 
 # Focus pages
@@ -266,6 +324,7 @@ for path in focus_pages:
         lastmod = "2026-08-04"
     else:
         lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else ("2026-04-20" if path in recent_lastmod_paths else "2026-03-24")
+    lastmod = resolved_lastmod(path, lastmod)
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.9</priority>\n</url>\n\n'
 
 # Other guides
@@ -284,6 +343,7 @@ for path in guides:
         lastmod = "2026-08-04"
     else:
         lastmod = "2026-06-23" if path in current_sprint_lastmod_paths else ("2026-04-20" if path in recent_lastmod_paths else "2026-03-17")
+    lastmod = resolved_lastmod(path, lastmod)
     sitemap += f'<url>\n<loc>{base_url}/{path}</loc>\n<lastmod>{lastmod}</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>\n\n'
 
 # The income, recipe and related video libraries remain publicly accessible,
