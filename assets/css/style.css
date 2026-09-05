@@ -1851,6 +1851,16 @@ section.card table td:last-child {
     color: #ffd166;
 }
 
+.field-note a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.field-note a:hover,
+.field-note a:focus-visible {
+    color: #ffd166;
+}
+
 .field-note ul {
     margin: 20px 0 0;
     padding-left: 1.2rem;
