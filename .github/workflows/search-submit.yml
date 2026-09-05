@@ -44,7 +44,8 @@ jobs:
             sleep 30
           done
 
-          echo "::warning::Live sitemap did not match the committed sitemap before timeout; submitting committed changed URLs anyway."
+          echo "::error::Live sitemap did not match this revision; stop before submitting URLs that may not be deployed."
+          exit 1
 
       - name: Check live sitemap URL health
         run: npm run check:live-sitemap

@@ -24,6 +24,17 @@ jobs:
         with:
           node-version: 24
 
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Check SEO and sitemap before publishing
+        run: |
+          npm run audit:seo
+          python sitemap_gen.py
+          git diff --exit-code -- sitemap.xml
+
       - name: Prepare public artifact
         run: npm run prepare:pages
 

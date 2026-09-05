@@ -60,6 +60,8 @@ def resolved_lastmod(path, fallback):
     return article_date_modified(path) or fallback
 
 
+substantive_2026_09_05_lastmod_paths = {"", "about/", "visit-uk/"}
+
 focus_pages = [
     "guides/cheap-holidays-spain-from-uk/",
     "guides/best-travel-booking-websites-uk/",
@@ -158,6 +160,12 @@ substantive_2026_07_28_lastmod_paths = {
 pages = [
     ("", "daily", "1.0"),
     ("visit-uk/", "weekly", "1.0"),
+    ("visit-uk/uk-trip-cost-7-days/", "weekly", "0.9"),
+    ("visit-uk/heathrow-airport-to-london/", "weekly", "0.9"),
+    ("visit-uk/uk-itinerary-7-days-without-car/", "weekly", "0.9"),
+    ("visit-uk/uk-eta-or-visitor-visa/", "weekly", "0.9"),
+    ("visit-uk/contactless-or-oyster-for-visitors/", "weekly", "0.9"),
+
     ("visit-uk/lands-end-cornwall-on-a-budget/", "weekly", "0.9"),
     ("visit-uk/avoid-motorway-fuel-prices/", "weekly", "0.9"),
     ("visit-uk/gatwick-airport-to-london/", "weekly", "0.9"),
@@ -287,7 +295,9 @@ sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
 # Main pages
 for path, freq, prio in pages:
-    if path in substantive_2026_08_28_lastmod_paths:
+    if path in substantive_2026_09_05_lastmod_paths:
+        lastmod = "2026-09-05"
+    elif path in substantive_2026_08_28_lastmod_paths:
         lastmod = "2026-08-28"
     elif path in substantive_2026_08_25_lastmod_paths:
         lastmod = "2026-08-25"
@@ -310,7 +320,9 @@ for path, freq, prio in pages:
 
 # Focus pages
 for path in focus_pages:
-    if path in substantive_2026_08_28_lastmod_paths:
+    if path in substantive_2026_09_05_lastmod_paths:
+        lastmod = "2026-09-05"
+    elif path in substantive_2026_08_28_lastmod_paths:
         lastmod = "2026-08-28"
     elif path in substantive_2026_08_25_lastmod_paths:
         lastmod = "2026-08-25"
@@ -329,7 +341,9 @@ for path in focus_pages:
 
 # Other guides
 for path in guides:
-    if path in substantive_2026_08_28_lastmod_paths:
+    if path in substantive_2026_09_05_lastmod_paths:
+        lastmod = "2026-09-05"
+    elif path in substantive_2026_08_28_lastmod_paths:
         lastmod = "2026-08-28"
     elif path in substantive_2026_08_25_lastmod_paths:
         lastmod = "2026-08-25"

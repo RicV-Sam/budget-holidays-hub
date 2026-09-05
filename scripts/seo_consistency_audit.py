@@ -194,6 +194,7 @@ def main():
     print(f"Issues found: {len(issues)}")
     for rel, msg in issues[:200]:
         print(f"- {rel}: {msg}")
+    raise SystemExit(1)
 
 
 if __name__ == "__main__":

@@ -1669,6 +1669,32 @@ section.card table td:last-child {
     max-width: 48ch;
 }
 
+/* Keep the primary answer visible on the first paint. */
+.uk-hero > * {
+    animation: none;
+}
+
+.uk-pillar .quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.uk-pillar .quick-nav strong {
+    flex-basis: 100%;
+    margin-bottom: 0;
+}
+
+.decision-table-wrap:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+}
+
+.decision-table-wrap caption {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
