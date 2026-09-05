@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Taste the World hero background</title>
+  <desc id="desc">Abstract travel and food background for Budget Holidays Hub recipe pages.</desc>
+  <rect width="1200" height="675" fill="#eaf2fc"/>
+  <rect x="0" y="0" width="1200" height="675" fill="#0a4da3" opacity="0.24"/>
+  <path d="M0 512c118-56 220-72 307-48 69 19 121 14 156-15 61-50 151-54 270-12 96 34 181 27 254-21 68-45 139-59 213-42v301H0z" fill="#ffffff" opacity="0.42"/>
+  <path d="M95 160h342c44 0 80 36 80 80v72c0 44-36 80-80 80H95z" fill="#ffffff" opacity="0.35"/>
+  <path d="M690 118h350c38 0 68 30 68 68v236c0 38-30 68-68 68H690c-38 0-68-30-68-68V186c0-38 30-68 68-68z" fill="#0a4da3" opacity="0.36"/>
+  <circle cx="245" cy="278" r="78" fill="#ffcd47" opacity="0.82"/>
+  <circle cx="835" cy="304" r="116" fill="#22c55e" opacity="0.32"/>
+  <path d="M732 358c69 42 143 42 222 0" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" opacity="0.72"/>
+  <path d="M172 250c42-32 84-32 126 0 42-32 84-32 126 0" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.82"/>
+</svg>
