@@ -59,5 +59,21 @@ jobs:
         run: npm run submit:bing
 
       - name: Submit changed URLs to IndexNow
-        continue-on-error: true
+        id: indexnow
         run: npm run submit:indexnow
+
+      - name: Record IndexNow outcome
+        if: ${{ always() }}
+        env:
+          SUBMISSION_OUTCOME: ${{ steps.indexnow.outcome }}
+        run: node scripts/lib/indexnow-client.mjs finalize budgetholidayshub.com "$SUBMISSION_OUTCOME"
+
+      - name: Save IndexNow receipt
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-status
+          path: .indexnow-status.json
+          include-hidden-files: true
+          retention-days: 90
+          if-no-files-found: warn

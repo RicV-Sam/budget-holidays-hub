@@ -5,3 +5,5 @@ _site/
 .tmp-lighthouse/
 output/
 test-results/lighthouse-*.json
+.indexnow-status.json
+.indexnow-status.json.tmp
