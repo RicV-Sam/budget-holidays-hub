@@ -162,6 +162,11 @@ pages = [
     ("", "daily", "1.0"),
     ("visit-uk/", "weekly", "1.0"),
     ("visit-uk/uk-trip-cost-7-days/", "weekly", "0.9"),
+    ("visit-uk/best-uk-airport-for-your-itinerary/", "weekly", "0.9"),
+    ("visit-uk/car-hire-and-driving-in-the-uk/", "weekly", "0.9"),
+    ("visit-uk/first-24-hours-in-the-uk/", "weekly", "0.9"),
+    ("visit-uk/choosing-uk-accommodation/", "weekly", "0.9"),
+    ("visit-uk/family-and-accessible-airport-transfers/", "weekly", "0.9"),
     ("visit-uk/heathrow-airport-to-london/", "weekly", "0.9"),
     ("visit-uk/uk-itinerary-7-days-without-car/", "weekly", "0.9"),
     ("visit-uk/uk-eta-or-visitor-visa/", "weekly", "0.9"),
@@ -296,7 +301,9 @@ sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
 
 # Main pages
 for path, freq, prio in pages:
-    if path in substantive_2026_09_08_lastmod_paths:
+    if path == "visit-uk/":
+        lastmod = "2026-09-15"  # Reworked visitor planning hub.
+    elif path in substantive_2026_09_08_lastmod_paths:
         lastmod = "2026-09-08"
     elif path in substantive_2026_09_05_lastmod_paths:
         lastmod = "2026-09-05"

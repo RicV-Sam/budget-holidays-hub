@@ -2005,6 +2005,7 @@ section.card table td:last-child {
 
 .uk-guide-layout {
     max-width: 1060px;
+    overflow-wrap: anywhere;
 }
 
 .uk-pillar {
