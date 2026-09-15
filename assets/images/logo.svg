@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Budget Holidays Hub Logo</title>
+  <desc id="desc">Blue square logo with white BHH letters and a small plane mark.</desc>
+  <rect width="512" height="512" rx="80" fill="#0a4da3"/>
+  <text x="64" y="308" font-family="Segoe UI, Arial, sans-serif" font-size="180" font-weight="700" fill="#ffffff">BHH</text>
+  <path d="M372 145l40-9-15 37 25 18-44 4-18 36-9-36-43-9 35-18 10-38 19 15z" fill="#ffd24d"/>
+</svg>
